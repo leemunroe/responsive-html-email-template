@@ -15,7 +15,7 @@ Put your CSS inline using [Premailer](http://premailer.dialect.ca/)
 * Paste the HTML as the source into Premailer
 * Copy the HTML results and use them in your email view/template
 
-### Tested across devices
+### Tried and tested
 
 Tested on all major email clients. Mobile, desktop and web. 
 
