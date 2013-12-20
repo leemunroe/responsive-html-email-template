@@ -9,7 +9,7 @@ Use the template as is. They'll put the CSS inline for you when you put together
 
 ### Sending emails directly from your app or using a developer service like Mailgun?
 
-Put your CSS inline using [Premailer](http://premailer.dialect.ca/)
+You need to put the CSS inline. You can use [Premailer](http://premailer.dialect.ca/) to do this automatically.
 
 * Copy all of email.html
 * Paste the HTML as the source into Premailer
