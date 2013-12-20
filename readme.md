@@ -1,6 +1,6 @@
 # Really Simple Responsive HTML Email Template
 
-Some times all you want is a really simple HTML email template. Here it is.
+Sometimes all you want is a really simple HTML email template. Here it is.
 
 ### Sending emails using a marketing service like Campaign Monitor or Mailchimp?
 
