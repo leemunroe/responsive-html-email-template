@@ -35,11 +35,13 @@ a {
 	color: #348eda;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary{
 	text-decoration:none;
 	color: #FFF;
 	background-color: #348eda;
-	padding:10px 20px;
+	border:solid #348eda;
+	border-width:10px 20px;
+	line-height:2;
 	font-weight:bold;
 	margin: 20px 10px 20px 0;
 	text-align:center;
@@ -48,8 +50,19 @@ a {
 	border-radius: 25px;
 }
 
-.btn-secondary{
-	background: #aaa;
+.btn-secondary {
+	text-decoration:none;
+	color: #FFF;
+	background-color: #aaa;
+	border:solid #aaa;
+	border-width:10px 20px;
+	line-height:2;
+	font-weight:bold;
+	margin: 20px 10px 20px 0;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+	border-radius: 25px;
 }
 
 .last { 
@@ -137,9 +150,13 @@ ul li {
 	clear:both!important;
 }
 
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container{
+	padding:20px;
+}
+
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
-	padding:20px;
 	max-width:600px;
 	margin:0 auto;
 	display:block; 
