@@ -17,6 +17,9 @@ You need to put the CSS inline. You can use [Premailer](http://premailer.dialect
 * Paste the HTML as the source into Premailer
 * Copy the HTML results and use them in your email view/template
 
+Note that some services may allow you to opt into CSS inlining, such as
+[Mandrill](http://help.mandrill.com/entries/24460141-Does-Mandrill-inline-CSS-automatically-).
+
 ### Tried and tested
 
 Tested on all major email clients. Mobile, desktop and web. 
