@@ -1,0 +1,25 @@
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  padding: 20px;
+  .container {
+    border: 1px solid #f0f0f0;
+  }
+}
+
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  width: 100%;  
+  clear: both!important;
+  .container p {
+    font-size: 12px;
+    color: #666;
+  }
+  a {
+    color: #999;
+  }
+}

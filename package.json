@@ -1,0 +1,9 @@
+{
+  "name": "email-template",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-premailer": "^0.2.5"
+  }
+}
