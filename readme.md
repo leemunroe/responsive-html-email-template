@@ -27,3 +27,10 @@ Tested on all major email clients. Mobile, desktop and web.
 <img src="http://i.imgur.com/TtYvCTr.jpg" alt="Email preview" width="800">
 
 Hat tip to Zurb's [Ink](http://zurb.com/ink/) for their awesome collection of email templates, which this was adapted from.
+
+### More HTML email resources
+
+I've open-sourced a few other resources you might find useful:
+
+* [Transactional HTML Email Templates](https://github.com/mailgun/transactional-email-templates)
+* [Grunt.js Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
