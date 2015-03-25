@@ -2,7 +2,7 @@
 
 Sometimes all you want is a really simple HTML email template. Here it is.
 
-Preview: http://leemunroe.github.io/html-email-template/email.html
+Preview: http://leemunroe.github.io/responsive-html-email-template/email.html
 
 ### Sending emails using a marketing service like Campaign Monitor or Mailchimp?
 
