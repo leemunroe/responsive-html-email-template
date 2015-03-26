@@ -171,6 +171,20 @@ ul li, ol li {
 .content table {
 	width: 100%;
 }
+#shadow {
+	position:relative;
+    background-color: black;
+    height: 10px;
+    width: 100%;
+    top: 21px;
+    bottom: 0px;
+    z-index:-1;
+    -webkit-box-shadow:0 0 30px rgba(0,0,0,0.8);
+    		box-shadow:0 0 30px rgba(0,0,0,0.8);
+    -moz-border-radius:100%;
+    border-radius:100%;
+
+}
 
 </style>
 </head>
@@ -207,6 +221,7 @@ ul li, ol li {
 					</td>
 				</tr>
 			</table>
+			<div id="shadow"></div>
 			</div>
 			<!-- /content -->
 			
