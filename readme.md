@@ -30,7 +30,8 @@ Hat tip to Zurb's [Ink](http://zurb.com/ink/) for their awesome collection of em
 
 ### More HTML email resources
 
-I've open-sourced a few other resources you might find useful:
+Another few open-source resources you might find useful:
 
 * [Transactional HTML Email Templates](https://github.com/mailgun/transactional-email-templates)
 * [Grunt.js Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
+* [Open-Source Email Template Project](https://github.com/sendwithus/templates)
