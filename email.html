@@ -13,14 +13,14 @@
         -ms-interpolation-mode: bicubic;
         max-width: 100%; }
 
-      .img-block {
-        display: block; }
-
       body {
+        background-color: #f6f6f6;
         font-family: sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
         line-height: 1.4;
+        margin: 0;
+        padding: 0; 
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%; }
 
@@ -37,10 +37,6 @@
       /* -------------------------------------
           BODY & CONTAINER
       ------------------------------------- */
-      body {
-        background-color: #f6f6f6;
-        margin: 0;
-        padding: 0; }
 
       .body {
         background-color: #f6f6f6;
@@ -164,13 +160,6 @@
         border-color: #3498db;
         color: #ffffff; }
 
-      @media all {
-        .btn-primary table td:hover {
-          background-color: #34495e !important; }
-        .btn-primary a:hover {
-          background-color: #34495e !important;
-          border-color: #34495e !important; } }
-
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
       ------------------------------------- */
@@ -272,7 +261,12 @@
           font-size: inherit !important;
           font-weight: inherit !important;
           line-height: inherit !important;
-          text-decoration: none !important; } }
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
 
     </style>
   </head>
