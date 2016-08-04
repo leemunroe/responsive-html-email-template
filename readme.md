@@ -1,15 +1,15 @@
 # Really Simple Responsive HTML Email Template
 
-Sometimes all you want is a really simple HTML email template. Here it is.
+Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
 Preview: http://leemunroe.github.io/responsive-html-email-template/email.html
 
-### Sending emails using a marketing service like Campaign Monitor or Mailchimp?
+## Sending emails using a marketing service like Campaign Monitor or Mailchimp?
 
 Use the template as is. They'll put the CSS inline for you when you put together your campaign.
 
 
-### Sending emails directly from your app or using a developer service like Mailgun?
+## Sending emails directly from your app or using a developer service
 
 For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use [Premailer](http://premailer.dialect.ca/) to do this automatically.
 
@@ -20,18 +20,19 @@ For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inlin
 Note that some services may allow you to opt into CSS inlining, such as
 [Mandrill](http://help.mandrill.com/entries/24460141-Does-Mandrill-inline-CSS-automatically-).
 
-### Tried and tested
+## Tried and tested and all major email clients
 
 Tested on all major email clients. Mobile, desktop and web. 
 
-<img src="http://i.imgur.com/TtYvCTr.jpg" alt="Email preview" width="800">
+![Templates](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
 
-Hat tip to Zurb's [Ink](http://zurb.com/ink/) for their awesome collection of email templates, which this was adapted from.
 
-### More HTML email resources
+[Here are the Litmus test results](https://litmus.com/checklist/emails/public/3a627f5).
+
+## More HTML email resources
 
 Another few open-source resources you might find useful:
 
-* [Transactional HTML Email Templates](https://github.com/mailgun/transactional-email-templates)
-* [Grunt.js Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
-* [Open-Source Email Template Project](https://github.com/sendwithus/templates)
+* [More Responsive HTML Email Templates](http://htmlemail.io)
+* [Things I've Learned About Building HTML Emails](http://www.leemunroe.com/building-html-email/)
+* [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
