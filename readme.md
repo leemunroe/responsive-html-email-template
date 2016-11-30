@@ -11,7 +11,7 @@ Use the template as is. They'll put the CSS inline for you when you put together
 
 ## Sending emails directly from your app or using a developer service
 
-For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use [Premailer](http://premailer.dialect.ca/) to do this automatically.
+For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use inliner tools like [Putsmail](https://putsmail.com/inliner) or [Juice](https://github.com/Automattic/juice) to do this automatically.
 
 * Copy all of email.html
 * Paste the HTML as the source into Premailer
