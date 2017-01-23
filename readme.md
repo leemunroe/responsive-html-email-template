@@ -1,5 +1,10 @@
 # Really Simple Responsive HTML Email Template
 
+[![NPM version][npm-image]][npm-url] 
+
+[npm-image]: https://badge.fury.io/js/responsive-html-email-template.svg
+[npm-url]: https://npmjs.org/package/responsive-html-email-template
+
 Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
 Preview: http://leemunroe.github.io/responsive-html-email-template/email.html
@@ -31,3 +36,17 @@ Tested on mobile, desktop and web.
 * [More Responsive HTML Email Templates](http://htmlemail.io)
 * [Things I've Learned About Building HTML Emails](http://www.leemunroe.com/building-html-email/)
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
+
+## Npm package
+
+You can use the npm package to install responsive-html-email-template and introduce it to your project's workflow:
+
+    npm install responsive-html-email-template
+
+## Gulp
+
+Under the `src` folder you can find the the used styles into a separate `email.sass` file.
+You can include that file in your build setup or override.
+
+In order to build the final html file you need to use `gulp-inline-css`. 
+You can find a sample source html file in `src/email.html` as well as a sample gulpfile. 
