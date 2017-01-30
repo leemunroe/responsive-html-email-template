@@ -12,12 +12,17 @@
     "url": "https://github.com/Wtower/responsive-html-email-template/issues"
   },
   "homepage": "https://github.com/Wtower/responsive-html-email-template",
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
     "gulp-util": "^3.0.7",
-    "gulpfile-ninecms": "^0.4.0",
     "yargs": "^6.3.0"
   }
 }
