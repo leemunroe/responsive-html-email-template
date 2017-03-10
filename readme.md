@@ -14,7 +14,7 @@ Use the template as is. They'll put the CSS inline for you when you put together
 For an API like [Mailgun](http://www.mailgun.com)  you need to put the CSS inline. You can use inliner tools like [Putsmail](https://putsmail.com/inliner) or [Juice](https://github.com/Automattic/juice) to do this automatically.
 
 * Copy all of email.html
-* Paste the HTML as the source into Premailer
+* Paste the HTML as the source into Putsmail
 * Copy the HTML results and use them in your email view/template
 
 ## Tried and tested on all major email clients
