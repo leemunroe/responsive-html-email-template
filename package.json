@@ -1,0 +1,28 @@
+{
+  "name": "responsive-html-email-template",
+  "version": "1.0.0",
+  "description": "When all you need is a really simple HTML email template.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wtower/responsive-html-email-template.git"
+  },
+  "author": "Lee Munroe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wtower/responsive-html-email-template/issues"
+  },
+  "homepage": "https://github.com/Wtower/responsive-html-email-template",
+  "scripts": {},
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-util": "^3.0.7",
+    "yargs": "^6.3.0"
+  }
+}
