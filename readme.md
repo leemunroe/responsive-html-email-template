@@ -16,7 +16,7 @@ Use the template `email.html` as is. They'll put the CSS inline for you when you
 
 For an API like [Mailgun](http://www.mailgun.com) **you need to inline the CSS before sending**. See `email-inlined.html` for an example. 
 
-You can use inliner tools like [Putsmail](https://putsmail.com/inliner) or [Juice](https://github.com/Automattic/juice) to do this automatically.
+You can use inliner tools like [Responsive CSS Inliner](https://htmlemail.io/inline/) or [Juice](https://github.com/Automattic/juice) to do this automatically.
 
 * Copy all of email.html
 * Paste the HTML as the source into Putsmail
