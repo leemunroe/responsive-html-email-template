@@ -4,7 +4,7 @@ Sometimes all you want is a really simple responsive HTML email template. Here i
 
 [See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
 
-<img src="https://cloud.githubusercontent.com/assets/15963/26765586/c6484a96-4933-11e7-80e0-2f7509d24280.png" alt="Simple HTML Email" width="500">
+<img src="https://user-images.githubusercontent.com/15963/29055956-8dcca38e-7bb4-11e7-8a86-7b056ebf673d.png" alt="Simple HTML Email" width="500">
 
 
 ## Sending emails directly from your codebase or using a developer service?
