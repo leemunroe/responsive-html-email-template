@@ -1,0 +1,292 @@
+//colors
+$white: #ffffff;
+$black: #000000;
+$color_gray: #999999;
+$color_light_gray: #f6f6f6;
+$color_blue: #3498db;
+$color_bluewood: #34495e;
+
+//fonts
+$main_font: sans-serif;
+
+/* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+img {
+	border: none;
+	-ms-interpolation-mode: bicubic;
+	max-width: 100%;
+}
+body {
+	background-color: $color_light_gray;
+	font-family: $main_font;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	text-size-adjust: 100%;
+}
+table {
+	border-collapse: separate;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+	width: 100%;
+	td {
+		font-family: $main_font;
+		font-size: 14px;
+		vertical-align: top;
+	}
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+.body {
+	background-color: $color_light_gray;
+	width: 100%;
+}
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display: block;
+	margin: 0 auto !important; /* makes it centered */
+	max-width: 580px;
+	padding: 10px;
+	width: 580px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	display: block;
+	margin: 0 auto;
+	max-width: 580px;
+	padding: 10px;
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+	background: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	width: 100%;
+}
+.wrapper {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	padding: 20px;
+}
+.content-block {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.footer {
+	clear: both;
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	td, p, span, a {
+		color: $color_gray;
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3, h4 {
+	color: $black;
+	font-family: $main_font;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0;
+	margin-bottom: 30px;
+}
+h1 {
+	font-size: 35px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: capitalize;
+}
+ul, ol, p {
+	font-family: $main_font;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	margin-bottom: 15px;
+	li {
+		list-style-position: inside;
+		margin-left: 5px;
+	}
+}
+a {
+	color: $color_blue;
+	text-decoration: underline;
+}
+
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+.btn {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	width: 100%;
+	table {
+		width: auto;
+		td {
+			background-color: $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 5px;
+			text-align: center;
+		}
+	}
+	a {
+		background-color: $white;
+		border: solid 1px $color_blue;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		color: $color_blue;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0;
+		padding: 12px 25px;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+	> tbody > tr > td {
+		padding-bottom: 15px;
+	}
+}
+.btn-primary {
+	a {
+		background-color: $color_blue;
+		border-color: $color_blue;
+		color: $white;
+	}
+	table td {
+		background-color: $color_blue;
+	}
+}
+
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+	margin-bottom: 0;
+}
+.first {
+	margin-top: 0;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.align-left {
+	text-align: left;
+}
+.clear {
+	clear: both;
+}
+.mt0 {
+	margin-top: 0;
+}
+.mb0 {
+	margin-bottom: 0;
+}
+.preheader {
+	color: transparent;
+	display: none;
+	height: 0;
+	max-height: 0;
+	max-width: 0;
+	opacity: 0;
+	overflow: hidden;
+	mso-hide: all;
+	visibility: hidden;
+	width: 0;
+}
+hr {
+	border: 0;
+	border-bottom: 1px solid $color_light_gray;
+	margin: 20px 0;
+}
+@media only screen and(max-width: 620px) {
+	table[class=body] {
+		h1 {
+			font-size: 28px !important;
+			margin-bottom: 10px !important;
+		}
+		p, ul, ol, td, span, a {
+			font-size: 16px !important;
+		}
+		.wrapper, .article {
+			padding: 10px !important;
+		}
+		.content {
+			padding: 0 !important;
+		}
+		.container {
+			padding: 0 !important;
+			width: 100% !important;
+		}
+		.main {
+			border-left-width: 0 !important;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0 !important;
+			border-right-width: 0 !important;
+		}
+		.btn {
+			table {
+				width: 100% !important;
+			}
+			a {
+				width: 100% !important;
+			}
+		}
+		.img-responsive {
+			height: auto !important;
+			max-width: 100% !important;
+			width: auto !important;
+		}
+	}
+}
+
+/* -------------------------------------
+    PRESERVE THESE STYLES IN THE HEAD
+------------------------------------- */
+@media all {
+	.ExternalClass {
+		width: 100%;
+		p, span, font, td, div {
+			line-height: 100%;
+		}
+	}
+	.apple-link a {
+		color: inherit !important;
+		font-family: inherit !important;
+		font-size: inherit !important;
+		font-weight: inherit !important;
+		line-height: inherit !important;
+		text-decoration: none !important;
+	}
+	.btn-primary {
+		table td:hover {
+			background-color: $color_bluewood !important;
+		}
+		a:hover {
+			background-color: $color_bluewood !important;
+			border-color: $color_bluewood !important;
+		}
+	}
+}

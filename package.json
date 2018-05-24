@@ -1,0 +1,14 @@
+{
+  "name": "responsive-html-email-template",
+  "description": "A free simple responsive HTML email template",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-inline-css": "^3.3.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
