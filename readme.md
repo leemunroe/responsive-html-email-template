@@ -2,6 +2,11 @@
 
 Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
+## Yet another fork! Why?
+
+This repo is a fork of [leemunroe's](https://github.com/leemunroe) [responsive-html-email-template](https://github.com/leemunroe/responsive-html-email-template) project. The only big difference is that my fork is built using [Gulp](https://gulpjs.com).
+This project has been originally forked for creating a pull request, however because of strict contributing policies its changes didn't make it to the original repo ([leemunroe/responsive-html-email-template](https://github.com/leemunroe/responsive-html-email-template)).
+
 [See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
 
 <img src="https://user-images.githubusercontent.com/15963/29055956-8dcca38e-7bb4-11e7-8a86-7b056ebf673d.png" alt="Simple HTML Email" width="500">
