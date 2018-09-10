@@ -1,4 +1,4 @@
-# Really Simple Responsive HTML Email Template
+# Really Simple Free Responsive HTML Email Template
 
 Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
@@ -26,7 +26,7 @@ Tested on mobile, desktop and web.
 
 ![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
 
-[See the Litmus test results](https://litmus.com/checklist/emails/public/cc3e30f).
+[See the Litmus test results](https://litmus.com/checklist/emails/public/bd7912f).
 
 ## More HTML email resources
 
