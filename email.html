@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- To render all elements more consistently -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <title>Simple Transactional Email</title>
     <style>
       /* -------------------------------------
@@ -53,7 +55,9 @@
 
       /* This should also be a block element, so that it will fill 100% of the .container */
       .content {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
         display: block;
         Margin: 0 auto;
         max-width: 580px;
@@ -64,11 +68,14 @@
       ------------------------------------- */
       .main {
         background: #ffffff;
-        border-radius: 3px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
         width: 100%; }
 
       .wrapper {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
         padding: 20px; }
 
       .content-block {
@@ -131,7 +138,9 @@
           BUTTONS
       ------------------------------------- */
       .btn {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
         width: 100%; }
         .btn > tbody > tr > td {
           padding-bottom: 15px; }
@@ -139,13 +148,17 @@
           width: auto; }
         .btn table td {
           background-color: #ffffff;
-          border-radius: 5px;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
           text-align: center; }
         .btn a {
           background-color: #ffffff;
           border: solid 1px #3498db;
-          border-radius: 5px;
-          box-sizing: border-box;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px;
+          -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+                  box-sizing: border-box;
           color: #3498db;
           cursor: pointer;
           display: inline-block;
@@ -235,7 +248,8 @@
           width: 100% !important; }
         table[class=body] .main {
           border-left-width: 0 !important;
-          border-radius: 0 !important;
+          -webkit-border-radius: 0 !important;
+                  border-radius: 0 !important;
           border-right-width: 0 !important; }
         table[class=body] .btn table {
           width: 100% !important; }
@@ -343,5 +357,9 @@
         <td>&nbsp;</td>
       </tr>
     </table>
+    <!-- Enables browser to understand and execute CSS and media queries which make web page responsive -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
   </body>
 </html>
