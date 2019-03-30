@@ -1,6 +1,6 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8N47UXGWGZUY4)
 
-# Really Simple Free Responsive HTML Email Template
+# Really Simple Free Responsive HTML Email Template.
 
 Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
@@ -14,9 +14,9 @@ For an API service (like Mailgun) **you need to inline the CSS before sending**.
 
 You can use CSS inliner tools like [Responsive CSS Inliner](https://htmlemail.io/inline/) or [Juice](https://github.com/Automattic/juice) to do this automatically.
 
-* Copy all of email.html
-* Paste the HTML as the source into the inliner
-* Copy the HTML output and use this as the email template you send
+* Copy all of email.html.
+* Paste the HTML as the source into the inliner.
+* Copy the HTML output and use this as the email template you send.
 
 ## Sending emails using a marketing service like Mailchimp?
 
@@ -30,7 +30,7 @@ Tested on mobile, desktop and web.
 
 [See the Litmus test results](https://litmus.com/checklist/emails/public/bd7912f).
 
-## More HTML email resources
+## More HTML email resources.
 
 * [More Responsive HTML Email Templates](http://htmlemail.io)
 * [An Introduction To Building And Sending HTML Email For Web Developers](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
