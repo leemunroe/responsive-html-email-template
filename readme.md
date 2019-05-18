@@ -1,6 +1,6 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8N47UXGWGZUY4)
 
-# Really Simple Free Responsive HTML Email Template
+# Free Responsive Simple HTML Email Template
 
 Sometimes all you want is a really simple responsive HTML email template. Here it is.
 
@@ -32,10 +32,10 @@ Tested on mobile, desktop and web.
 
 ## More HTML email resources
 
-* [More Responsive HTML Email Templates](http://htmlemail.io)
-* [An Introduction To Building And Sending HTML Email For Web Developers](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
+* [10 Designed HTML Email Templates for Developers](http://htmlemail.io)
+* [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
 * [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
 
-This free template is part of a family of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
+This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
 [![image](https://user-images.githubusercontent.com/15963/49354042-c0bcb800-f675-11e8-92ef-7e9987b85bf6.png)](https://htmlemail.io)
