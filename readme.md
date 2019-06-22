@@ -22,6 +22,21 @@ You can use CSS inliner tools like [Responsive CSS Inliner](https://htmlemail.io
 
 Use the template `email.html` as is. They'll put the CSS inline for you when you put together your campaign.
 
+## Images in email
+
+When inserting images remember to include the following attrinbutes or risk them breaking in different clients:
+
+* `src`
+* `alt`
+* `width`
+* `height`
+* `border`
+
+Example"
+`<img src="https://absolute-path-to-image.jpg" alt="Useful alt text" width="500" height="300" border="0" style="border:0; outline:none; text-decoration:none; display:block;">`
+
+[More information here](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
+
 ## Tried and tested on all major email clients
 
 Tested on mobile, desktop and web.
