@@ -32,7 +32,8 @@ When inserting images remember to include the following attrinbutes or risk them
 * `height`
 * `border`
 
-Example"
+Example:
+
 `<img src="https://absolute-path-to-image.jpg" alt="Useful alt text" width="500" height="300" border="0" style="border:0; outline:none; text-decoration:none; display:block;">`
 
 [More information here](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
