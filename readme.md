@@ -1,8 +1,8 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8N47UXGWGZUY4)
 
-# Free Responsive Simple HTML Email Template
+# Free and Responsive Simple HTML Email Template
 
-Sometimes all you want is a really simple responsive HTML email template with a clear call-to-action button. Here it is.
+Sometimes all you want is a really simple and responsive HTML email template with a clear call-to-action button. Here it is.
 
 [See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
 
