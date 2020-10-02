@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Simple Transactional Email</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
       /* -------------------------------------
           GLOBAL RESETS
@@ -144,6 +145,15 @@
         color: #3498db;
         text-decoration: underline; 
       }
+      .img__back{
+     widows: 100%;
+      height: 100%;
+      overflow: hidden;
+   
+      }
+     .main{
+     z-index: 200;
+     }
 
       /* -------------------------------------
           BUTTONS
@@ -333,12 +343,15 @@
     </style>
   </head>
   <body class="">
+    <div class="img__back">
+    <img  src='https://source.unsplash.com/1600x500/?nature,water' alt='' />
     <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
         <td class="container">
           <div class="content">
+           
 
             <!-- START CENTERED WHITE CONTAINER -->
             <table role="presentation" class="main">
@@ -394,6 +407,8 @@
                 </tr>
               </table>
             </div>
+            </div>
+
             <!-- END FOOTER -->
 
           </div>

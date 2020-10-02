@@ -52,7 +52,15 @@
         width: auto !important;
       }
     }
-
+    .img__back{
+     widows: 100%;
+      height: 100%;
+      overflow: hidden;
+   
+      }
+     .main{
+     z-index: 200;
+     }
     /* -------------------------------------
         PRESERVE THESE STYLES IN THE HEAD
     ------------------------------------- */
@@ -95,6 +103,8 @@
     </style>
   </head>
   <body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+    <div class="img__back">
+    <img  src='https://source.unsplash.com/1600x500/?nature,water' alt='' />
     <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
     <table border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
       <tr>
@@ -138,6 +148,7 @@
 
             <!-- END MAIN CONTENT AREA -->
             </table>
+            </div>
 
             <!-- START FOOTER -->
             <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
@@ -155,6 +166,7 @@
                 </tr>
               </table>
             </div>
+
             <!-- END FOOTER -->
 
           <!-- END CENTERED WHITE CONTAINER -->
