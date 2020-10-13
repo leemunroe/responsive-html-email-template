@@ -1,405 +1,116 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Simple Transactional Email</title>
-    <style>
-      /* -------------------------------------
-          GLOBAL RESETS
-      ------------------------------------- */
-      
-      /*All the styling goes here*/
-      
-      img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%; 
-      }
+<table style="background:#EEE;padding:40px;border:1px solid #DDD;margin:0 auto;font-family:calibri;">
+  <tr>
+    <td>
+      <table style="background:#FFF;width:100%;border:1px solid #CCC;padding:0;margin:0;border-collapse:collapse;max-width:100%;width:550px;border-radius:10px;">
+        <!-- Logo -->
+        <tr>
+          <td style="padding:10px 30px;text-align:center;margin:0">
+            <p>
+              <a href="#">
+                <!--                 <img src="http://mailchimp.com/assets/images/freddie-719ecb5b.svg" width="100"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" enable-background="new 0 0 500 500" style="width: 100px;"><style type="text/css">.st0-47418267889900{fill:#694D46;} .st1-47418267889900{fill:#0C8AC0;} .st2-47418267889900{fill:#F6DDBB;} .st3-47418267889900{fill:#FFFFFF;} .st4-47418267889900{fill:#46B8E3;} .st5-47418267889900{fill:#132031;} .st6-47418267889900{fill:#EBBF8E;} .st7-47418267889900{fill:#9D7356;} .st8-47418267889900{fill:#FFD250;}</style><path id="_x3C_Brown_x3E_" class="st0-47418267889900" d="M480.499 356.865c-.388 1.268-37.047 142.176-181.083 142.133-124.51-.037-183.526-108.262-183.526-108.262-9.075.506-17.83-.935-25.906-3.902-36.53-13.42-54.057-55.212-41.454-90.275l-20.077-15.343c-77.773-59.245 142.542-330.352 220.448-269.005.394.31 18.598 14.962 18.598 14.962 27.972-16.987 55.675-26.17 78.195-26.172 15.992-.001 29.367 4.629 38.374 14.381 20.221 21.895 12.953 63.703-14.659 106.032 5.939 5.639 10.861 13.301 14.374 20.908 8.778 6.774 14.468 17.07 17.295 31.292 3.148 15.813 3.801 38.336 5.777 48.015 7.446 3.36 4.274 1.805 12.213 5.771 8.278 4.137 18.358 9.175 29.498 19.894 19.801 4.96 27.362 26.013 15.776 40.381-.311.385-1.71 2.044-3.159 3.692.346.912 4.143 7.065 6.885 19.592 8.205 1.937 14.741 6.99 18.172 14.315 5.932 14.34-5.741 31.591-5.741 31.591z"></path><path id="_x3C_Blue_x3E_" class="st1-47418267889900" d="M268.367 41.309c21.065-12.648 48.581-25.575 73.163-25.575 43.108 0 42.906 33.565 31.822 62.88-4.49 12.191-9.702 21.388-15.982 31.662-18.563-14.272-72.744-10.23-126.987 24.927-55.88 36.218-78.232 80.079-94.934 122.204-18.365-7.8-34.054-5.587-45.586-2.148-11.532 3.439-23.671 12.341-33.786 26.375-.198-.054-18.961-13.823-21.629-18.356-15.787-26.639 11.678-81.356 31.221-112.459 48.299-76.866 128.69-137.528 165.204-128.865l10.042-3.848 27.454 23.203h-.002z"></path><path id="_x3C_Light-Tan_x3E_" class="st2-47418267889900" d="M145.273 303.841c3.137-7.973 4.718-14.517 4.718-14.517 3.59 10.978 5.428 22.524 4.707 34.195 2.977-3.961 6.173-11.421 6.173-11.421 5.538 32.602-18.254 62.445-49.599 62.445-27.828 0-50.387-23.749-50.387-53.046 0-29.296 22.559-53.046 50.387-53.046 7.214 0 14.074 1.596 20.278 4.471 0 0 10.71 5.401 13.723 30.919zm274.191 114.965c39.061-30.692 45.886-67.656 46.537-68.93 9.611-11.528 6.998-22.885-5.698-22.886-4.041 0-7.092 1.066-7.092 1.066s.046-16.822-7.735-29.923c-5.998 6.746-22.649 20.11-44.496 30.482-20.487 9.726-47.825 18.245-81.703 19.373h-.001c-9.485.413-15.354-1.132-18.658 9.926-1.055 3.907-.598 9.712.195 11.39 2.672 9.159 9.654 13.197 18.844 15.335 6.969 1.624 14.37 1.776 14.37 1.776 68.707 1.927 123.879-51.659 124.538-52.105.638-.523 1.166-1.142 1.166-1.142l-.678 1.582c-9.923 22.317-67.382 62.788-124.574 61.629l-.188.066c-13.264-.05-29.379-3.464-37.757-13.853-13.255-16.437-6.377-43.769 14.75-44.408.026-.001 4.884-.113 7.046-.168 52.31-1.608 99.245-20.826 132.851-60.958 4.621-5.74-.541-13.626-10.556-13.865-.088-.002-.173-.04-.233-.104-11.875-12.714-22.312-17.206-31.599-21.925-19.468-9.917-17.636-1.351-22.164-49.455-1.225-12.968-3.682-30.655-15.075-37.437-2.987-1.778-6.25-2.541-9.639-2.541-3.349 0-4.98.684-5.639.83-6.241 1.383-9.789 4.92-14.235 9.019-21.006 19.37-37.796 14.112-62.856 13.891-23.536-.205-44.316 16.212-48.292 41.424l-.007.014c-1.932 13.198-.681 26.608 1.387 32.636 0 0-6.388-4.249-9.432-8.011 3.685 23.033 24.698 38.087 24.698 38.087-3.31.761-8.071.445-8.071.445.02.017 11.994 9.487 22.388 12.791-2.706 1.685-16.407 15.203-23.471 33.812-6.611 17.415-3.918 38.322-3.918 38.322l5.741-8.559s-3.75 19.074 3.508 37.547c2.408-5.495 7.67-15.305 7.67-15.305s-.835 20.485 9.027 37.258c.253-3.871 1.734-13.726 1.734-13.726s5.659 17.487 18.732 29.716c24.473 21.715 89.269 25.638 138.586-13.115l-.001-.001z"></path><path id="_x3C_white_x3E_" class="st3-47418267889900" d="M453.211 328.056s.046-16.822-7.735-29.923c-5.998 6.746-22.649 20.11-44.496 30.482-20.487 9.726-47.825 18.245-81.703 19.373h-.001c-9.485.413-15.354-1.132-18.658 9.926-.257.954-.425 2.021-.519 3.113l-.005.112-.004-.001c-.029.352-.05.707-.065 1.061-.033 1.011-.022 1.901.017 2.678l.003.056.01.17c.03.486.071.952.123 1.39l.008.066.008.069c.224 1.756.572 2.572.614 2.666l.005.01.043.147c2.704 9.056 9.66 13.061 18.801 15.188 6.969 1.624 14.37 1.776 14.37 1.776 56.059 1.572 103.108-33.811 118.888-47.134.271-3.734.43-6.397.296-11.225zm-160.999-299.452c13.392-6.174 27.746-11.053 41.512-12.458-13.673 3.077-30.334 10.166-50.073 22.245-.481.278-46.709 31.478-74.953 59.493-15.391 15.267-77.196 89.381-77.148 89.319 11.296-21.376 18.737-31.87 36.618-54.358 10.113-12.719 20.905-25.088 31.952-36.509 3.714-3.839 7.456-7.571 11.212-11.173 1.431-1.373 33.728-34.445 80.879-56.557l.001-.002z"></path><path id="_x3C_Light-Blue_x3E_" class="st4-47418267889900" d="M230.871 21.954l-3.188 9.812 1.908 7.713-23.094-7.478s-11.436 5.434-11.431 5.473l5.949 40.965c-1.497 1.016-54.607 35.602-96.862 102.677l-38.485-30.298c2.408-3.831 4.695-7.305 6.766-10.323 3.963-5.783 8.038-11.408 12.2-16.864 21.668-28.408 45.685-52.216 68.484-69.715 18.941-14.531 54.542-37.471 77.753-31.963v.001z"></path><path id="_x3C_Navy_x3E_" class="st5-47418267889900" d="M283.651 38.39c19.738-12.079 36.4-19.168 50.073-22.245 2.627-.268 5.232-.412 7.806-.412 43.108 0 42.906 33.565 31.822 62.88-4.49 12.191-9.702 21.388-15.982 31.662-18.563-14.272-72.744-10.23-126.987 24.927-55.88 36.218-78.232 80.079-94.934 122.204-18.365-7.8-34.054-5.587-45.586-2.148-3.182.949-6.41 2.315-9.628 4.088l-.809.028c16.963-59.233 62.546-120.083 109-159.722 11.589-9.888 34.889-25.575 34.889-25.575l-26.329-23.198-1.917-13.405 36.225 29.912-.008.006c-1.64 1.344-3.283 2.72-4.927 4.126-3.572 3.055-7.152 6.254-10.725 9.579-5.197 4.834-10.381 9.933-15.51 15.235-11.048 11.421-21.839 23.79-31.952 36.509-17.881 22.489-25.323 32.982-36.618 54.358-.049.063 61.756-74.052 77.148-89.319 28.244-28.015 74.472-59.214 74.953-59.493l-.004.003zm-43.271 21.818l7.738-5.671-22.846-6.976 15.108 12.647zm-4.087-18.559l-5.421-19.695-3.188 9.812 1.908 7.713 6.702 2.17h-.001zm12.244-4.177l4.02 13.97 7.052-4.689-11.072-9.281z"></path><path id="_x3C_Tan_x3E_" class="st6-47418267889900" d="M419.464 418.806c-6.705 5.269-13.697 9.747-20.834 13.501-16.505-6.273-26.633-19.638-26.633-19.638s14.151-3.346 33.065-12.965c23.006-11.69 44.504-28.579 60.939-49.828-.651 1.274-7.476 38.238-46.537 68.93zm-44.919-178.18c-7.984-5.677-21.206-1.159-24.121 8.237 4.62.233 9.522 3.729 9.22 8.2 3.262-3.157 7.9-4.939 12.412-4.856-2.178-3.491-1.079-9.507 2.49-11.582l-.001.001zm-83.764 114.663c2.515-9.36 9.618-16.775 20.503-17.105.026-.001 4.884-.113 7.046-.168 52.31-1.608 99.245-20.826 132.851-60.958 4.621-5.74-.541-13.626-10.556-13.865h-.143c-1.693 1.791-1.997 5.062-4.798 9.95-10.222 17.759-24.361 25.88-43.214 35.302-57.801 28.777-87.776 15.387-99.805 33.005-3.496 5.186-3.562 10.978-1.884 13.841v-.002zm104.587-120.69c-5.528-3.967-5.726-10.886-8.739-42.892-.964-10.208-2.693-23.338-8.941-31.773-1.292-1.129-3.109-2.425-5.725-2.425-3.946-.174-8.408 3.915-10.937 6.709-7.179 10.361-14.036 17.031-26.166 22.814-12.277 5.556-23.943 7.572-36.055 7.189-8.866-.28-16.63-1.74-24.24-1.838-14.102-.221-26.325 4.35-35.233 15.599-6.109 7.715-8.561 15.869-9.343 25.576.03 1.169.082 2.273.15 3.312.105 1.543.246 3.014.417 4.396.622 4.919 1.509 7.471 1.509 7.471l-.017.111.224.695s-6.388-4.249-9.432-8.011c3.072 19.202 18.185 32.857 23.129 36.869l.861.669.064.065c.414.32.643.484.643.484-3.31.761-8.071.445-8.071.445.02.017 11.994 9.487 22.388 12.791 13.788-11.652 29.421-16.125 42.254-17.513 7.779-4.827 16.142-9.568 25.121-14.14-2.719-16.932 12.296-33.984 31.192-35.621 14.258-1.038 21.194 5.353 26.19 12.187 2.71-.865 5.768-1.811 9.184-2.816-.147-.096-.29-.215-.429-.353h.002zm6.82 114.04c-.144.003-.293.035-.531.088-5.697 1.32-64.434 24.074-101.567 12.41-.166 2.031-.113 6.301.719 8.156l.005.01c5.617 1.126 12.726 1.846 20.977 1.846 48.863 0 84.075-22.215 80.397-22.511v.001zm-273.361-4.563l.042-.029c2.975-3.198 4.224-7.667 3.516-11.94-1.098-6.149-8.065-7.391-12.673-12.167l-.218-.23-.227-.254-.015-.017c-2.07-2.384-2.79-5.095-2.622-7.514.365-6.29 5.95-8.058 8.857-6.901 0 0 3.448.815 6.119 4.541l-.003-.015c-.406-1.229-.322-3.215-2.412-6.174-3.425-4.852-11.291-9.787-22.443-7.425h.002c-2.061.437-.907.188-2.94.762-.317.089-.607.178-.857.282-.639.3-1.23.505-1.797.806-.294.164-1.97.923-3.986 2.442-12.534 16.184 8.697 45.527 31.658 43.833h-.001z"></path><path id="_x3C_Med-brown_x3E_" class="st7-47418267889900" d="M313.645 243.954c1.058 1.547 1.342 2.715.914 3.2-.853.995-3.897-.35-8.394-2.1-11.509-4.294-19.987-4.948-34.997.734-3.795 1.448-6.486 2.566-7.777 2.374-2.105-.314-.067-4.166 4.534-7.904 9.255-7.384 21.968-9.675 32.831-5.633 4.757 1.75 10.097 5.242 12.891 9.329h-.002zm-2.28 11.772c-3.155-2.409-8.965-4.025-14.997-3.001-1.265.193-2.435.585-3.586.894-.421.105-.826.254-1.218.419-2.494 1.05-4.653 2.183-6.748 4.191-2.403 2.323-3.086 4.48-2.391 5.011.683.545 2.346-.262 4.918-1.302 8.614-3.581 14.708-3.676 20.516-3.272 2.8.188 4.675.357 5.11-.406.305-.518-.251-1.502-1.604-2.535v.001zm-185.487 44.177l.002.002.003.002c1.413 1.124 2.498 2.324 3.307 3.47 2.649 3.75 1.806 5.938 2.893 7.002.392.385.953.506 1.512.278 1.501-.62 2.24-3.01 2.381-4.676l.001-.011c.377-4.008-1.741-8.513-4.55-11.705l-.008-.009c-1.719-1.996-3.98-3.856-6.671-5.355-2.694-1.5-5.821-2.638-9.26-3.171-5.941-.924-11.785.259-13.416.746l.008-.002c-.841.244-1.882.463-2.775.814-9.689 3.779-16.065 10.715-18.903 19.901l-.001.003-.001.004c-1.049 3.497-1.467 6.873-1.467 9.993 0 2.689.31 5.187.793 7.415v.002l.001.004-.001-.003c.82 3.747 2.497 7.965 5.113 10.736l.008.009c3.272 3.536 6.857 2.859 5.326-.43-.365-.911-2.341-4.635-2.607-11.376-.173-4.411.433-9.002 2.052-13.192.896-2.267 2.124-4.471 3.721-6.454 3.293-4.028 7.339-5.832 7.813-6.096.567-.301 1.158-.507 1.797-.806.25-.104.54-.193.857-.282 2.034-.573.879-.325 2.94-.762h-.002c7.753-1.642 14.424.155 19.131 3.951l.003-.002zm-1.654 14.969c-1.07-.848-1.568-1.572-1.863-2.687-.438-2.03-.21-3.209 1.525-4.428 1.336-.915 2.411-1.356 2.415-1.932.06-1.087-4.409-2.208-7.533.868-2.595 2.764-3.414 8.526.725 13.017 4.608 4.973 11.774 6.146 12.89 12.397.147.886.256 1.873.179 2.846.016 1.119-.357 2.727-.376 2.828-1.386 6.038-7.117 11.801-16.567 10.332-1.741-.253-2.869-.467-3.205.014-.729 1.014 3.321 5.648 10.735 5.48 7.254-.153 14.45-5.585 16.757-13.747.027-.107.707-2.421.764-4.495.13-1.536.02-3.116-.268-4.769-1.891-10.48-12.306-12.634-16.179-15.724h.001zm252.808-74.834c-2.867-.447-5.687 2.377-6.3 6.308-.613 3.931 1.214 7.48 4.08 7.927 2.867.447 5.687-2.377 6.3-6.308s-1.214-7.48-4.08-7.927zm-31.496 11.467c-1.576 2.875.343 6.958 4.286 9.118 3.943 2.161 8.416 1.581 9.992-1.294 1.576-2.875-.343-6.958-4.286-9.118s-8.416-1.581-9.992 1.294zm-115.155-116.302c54.243-35.158 108.425-39.199 126.987-24.927l.003-.005c-.034-.094-.333-.917-.449-1.142-4.713-10.015-15.711-17.002-25.508-19.805 1.718 1.785 4.205 5.053 5.21 6.996-7.394-5.078-17.218-9.551-27.471-11.675 0 0 1.221.878 1.431 1.073 2.044 1.903 4.764 4.911 5.876 7.495-9.8-3.935-22.188-6.139-32.793-4.098-.148.028-1.325.307-1.325.307s1.38.343 1.687.434c3.517 1.043 8.535 3.186 10.747 6.123-17.604-3.096-36.969.331-47.413 6.17 1.343-.057 1.331-.062 2.465-.032 3.842.102 11.582.624 14.832 2.692-11.104 2.258-27.173 7.226-35.824 14.665 1.528-.178 10.195-1.282 13.742-.713-47.615 27.247-69.285 68.441-69.285 68.441 14.038-18.294 32.25-35.901 57.086-51.998l.002-.001z"></path><path id="_x3C_gold_x3E_" class="st8-47418267889900" d="M268.367 41.309s-3.885 2.311-8.745 5.455l-11.085-9.292c.169.588 3.898 13.548 4.026 13.991-1.548 1.059-3.024 2.089-4.424 3.081-.647-.198-21.461-6.553-22.867-6.982.748.626 14.299 11.97 15.111 12.65-4.585 3.458-6.985 5.449-9.092 7.175-.938-.777-35.572-29.464-36.24-30.018l11.446-5.368c.586.19 28.89 9.355 29.796 9.648l-5.421-19.695 10.042-3.848 27.454 23.203h-.001z"></path><path id="_x3C_brown-eye_x3E_" class="st0-47418267889900" d="M358.116 212.546c-.074-3.738.518-9.915 4.037-11.064l.007-.002v.001c6.015-2.087 13.979 13.317 14.345 26.994-4.753-2.379-10.339-3.39-16.083-2.892-1.444-4.402-2.136-8.549-2.307-13.036l.001-.001z"></path></svg>
+              </a>
+            </p>
+          </td>
+        </tr>
 
-      body {
-        background-color: #f6f6f6;
-        font-family: sans-serif;
-        -webkit-font-smoothing: antialiased;
-        font-size: 14px;
-        line-height: 1.4;
-        margin: 0;
-        padding: 0;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%; 
-      }
-
-      table {
-        border-collapse: separate;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 14px;
-          vertical-align: top; 
-      }
-
-      /* -------------------------------------
-          BODY & CONTAINER
-      ------------------------------------- */
-
-      .body {
-        background-color: #f6f6f6;
-        width: 100%; 
-      }
-
-      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-      .container {
-        display: block;
-        margin: 0 auto !important;
-        /* makes it centered */
-        max-width: 580px;
-        padding: 10px;
-        width: 580px; 
-      }
-
-      /* This should also be a block element, so that it will fill 100% of the .container */
-      .content {
-        box-sizing: border-box;
-        display: block;
-        margin: 0 auto;
-        max-width: 580px;
-        padding: 10px; 
-      }
-
-      /* -------------------------------------
-          HEADER, FOOTER, MAIN
-      ------------------------------------- */
-      .main {
-        background: #ffffff;
-        border-radius: 3px;
-        width: 100%; 
-      }
-
-      .wrapper {
-        box-sizing: border-box;
-        padding: 20px; 
-      }
-
-      .content-block {
-        padding-bottom: 10px;
-        padding-top: 10px;
-      }
-
-      .footer {
-        clear: both;
-        margin-top: 10px;
-        text-align: center;
-        width: 100%; 
-      }
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-          color: #999999;
-          font-size: 12px;
-          text-align: center; 
-      }
-
-      /* -------------------------------------
-          TYPOGRAPHY
-      ------------------------------------- */
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: #000000;
-        font-family: sans-serif;
-        font-weight: 400;
-        line-height: 1.4;
-        margin: 0;
-        margin-bottom: 30px; 
-      }
-
-      h1 {
-        font-size: 35px;
-        font-weight: 300;
-        text-align: center;
-        text-transform: capitalize; 
-      }
-
-      p,
-      ul,
-      ol {
-        font-family: sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
-        margin-bottom: 15px; 
-      }
-        p li,
-        ul li,
-        ol li {
-          list-style-position: inside;
-          margin-left: 5px; 
-      }
-
-      a {
-        color: #3498db;
-        text-decoration: underline; 
-      }
-
-      /* -------------------------------------
-          BUTTONS
-      ------------------------------------- */
-      .btn {
-        box-sizing: border-box;
-        width: 100%; }
-        .btn > tbody > tr > td {
-          padding-bottom: 15px; }
-        .btn table {
-          width: auto; 
-      }
-        .btn table td {
-          background-color: #ffffff;
-          border-radius: 5px;
-          text-align: center; 
-      }
-        .btn a {
-          background-color: #ffffff;
-          border: solid 1px #3498db;
-          border-radius: 5px;
-          box-sizing: border-box;
-          color: #3498db;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 14px;
-          font-weight: bold;
-          margin: 0;
-          padding: 12px 25px;
-          text-decoration: none;
-          text-transform: capitalize; 
-      }
-
-      .btn-primary table td {
-        background-color: #3498db; 
-      }
-
-      .btn-primary a {
-        background-color: #3498db;
-        border-color: #3498db;
-        color: #ffffff; 
-      }
-
-      /* -------------------------------------
-          OTHER STYLES THAT MIGHT BE USEFUL
-      ------------------------------------- */
-      .last {
-        margin-bottom: 0; 
-      }
-
-      .first {
-        margin-top: 0; 
-      }
-
-      .align-center {
-        text-align: center; 
-      }
-
-      .align-right {
-        text-align: right; 
-      }
-
-      .align-left {
-        text-align: left; 
-      }
-
-      .clear {
-        clear: both; 
-      }
-
-      .mt0 {
-        margin-top: 0; 
-      }
-
-      .mb0 {
-        margin-bottom: 0; 
-      }
-
-      .preheader {
-        color: transparent;
-        display: none;
-        height: 0;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
-        width: 0; 
-      }
-
-      .powered-by a {
-        text-decoration: none; 
-      }
-
-      hr {
-        border: 0;
-        border-bottom: 1px solid #f6f6f6;
-        margin: 20px 0; 
-      }
-
-      /* -------------------------------------
-          RESPONSIVE AND MOBILE FRIENDLY STYLES
-      ------------------------------------- */
-      @media only screen and (max-width: 620px) {
-        table[class=body] h1 {
-          font-size: 28px !important;
-          margin-bottom: 10px !important; 
-        }
-        table[class=body] p,
-        table[class=body] ul,
-        table[class=body] ol,
-        table[class=body] td,
-        table[class=body] span,
-        table[class=body] a {
-          font-size: 16px !important; 
-        }
-        table[class=body] .wrapper,
-        table[class=body] .article {
-          padding: 10px !important; 
-        }
-        table[class=body] .content {
-          padding: 0 !important; 
-        }
-        table[class=body] .container {
-          padding: 0 !important;
-          width: 100% !important; 
-        }
-        table[class=body] .main {
-          border-left-width: 0 !important;
-          border-radius: 0 !important;
-          border-right-width: 0 !important; 
-        }
-        table[class=body] .btn table {
-          width: 100% !important; 
-        }
-        table[class=body] .btn a {
-          width: 100% !important; 
-        }
-        table[class=body] .img-responsive {
-          height: auto !important;
-          max-width: 100% !important;
-          width: auto !important; 
-        }
-      }
-
-      /* -------------------------------------
-          PRESERVE THESE STYLES IN THE HEAD
-      ------------------------------------- */
-      @media all {
-        .ExternalClass {
-          width: 100%; 
-        }
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-          line-height: 100%; 
-        }
-        .apple-link a {
-          color: inherit !important;
-          font-family: inherit !important;
-          font-size: inherit !important;
-          font-weight: inherit !important;
-          line-height: inherit !important;
-          text-decoration: none !important; 
-        }
-        #MessageViewBody a {
-          color: inherit;
-          text-decoration: none;
-          font-size: inherit;
-          font-family: inherit;
-          font-weight: inherit;
-          line-height: inherit;
-        }
-        .btn-primary table td:hover {
-          background-color: #34495e !important; 
-        }
-        .btn-primary a:hover {
-          background-color: #34495e !important;
-          border-color: #34495e !important; 
-        } 
-      }
-
-    </style>
-  </head>
-  <body class="">
-    <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
-      <tr>
-        <td>&nbsp;</td>
-        <td class="container">
-          <div class="content">
-
-            <!-- START CENTERED WHITE CONTAINER -->
-            <table role="presentation" class="main">
-
-              <!-- START MAIN CONTENT AREA -->
+        <!-- Welcome Salutation -->
+        <tr>
+          <td style="padding:10px 30px;margin:0;font-size:2.5em;color:#4A7BA5;text-align:center;">
+            Welcome to MyPortal
+          </td>
+        </tr>
+        <!-- User Msg -->
+        <tr>
+          <td style="padding:10px 30px;margin:0;text-align:left;">
+            <p>Hi {$user},</p>
+            <p>To activate your profile please follow the below link</p>
+          </td>
+        </tr>
+        <!-- Link Button -->
+        <tr>
+          <td style="padding:10px 30px;margin:0;text-align:center;">
+            <p><a href="#" style="background:#4A7BA5;color:#FFF;padding:10px;text-decoration:none;">Activate Profile</a></p>
+          </td>
+        </tr>
+        <!-- Any Banner Image -->
+        <tr>
+          <td style="padding:10px 30px;margin:0">
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+          </td>
+        </tr>
+        <!-- Colorful Steps Data -->
+        <tr>
+          <td style="padding:10px 30px;margin:0;background: #F36565;color: #FFFFFF;">
+            <table style="width:100%;padding:10px;text-align:center;">
               <tr>
-                <td class="wrapper">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td>
-                        <p>Hi there,</p>
-                        <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td> <a href="http://htmlemail.io" target="_blank">Call To Action</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p>
-                      </td>
-                    </tr>
-                  </table>
+                <td colspan="2" style="font-size:1.8em">Heading Content Goes Here</td>
+              </tr>
+              <tr>
+                <td style="width:80px;font-size:3em;">1</td>
+                <td style="text-align:left;">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
                 </td>
               </tr>
-
-            <!-- END MAIN CONTENT AREA -->
+              <tr>
+                <td style="width:80px;font-size:3em;">2</td>
+                <td style="text-align:left;">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:80px;font-size:3em;">3</td>
+                <td style="text-align:left;">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width:80px;font-size:3em;">4</td>
+                <td style="text-align:left;">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+                </td>
+              </tr>
             </table>
-            <!-- END CENTERED WHITE CONTAINER -->
-
-            <!-- START FOOTER -->
-            <div class="footer">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block">
-                    <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
-                    <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by">
-                    Powered by <a href="http://htmlemail.io">HTMLemail</a>.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- END FOOTER -->
-
-          </div>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
-  </body>
-</html>
+          </td>
+        </tr>
+        <!-- Some more content -->
+        <tr>
+          <td style="padding:10px 30px;margin:0">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+          </td>
+        </tr>
+        <!-- Footer Content -->
+        <tr>
+          <td style="padding:10px 30px;margin:0;background:#555;color:#FFF;border-top:1px solid #CCC;">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+            <p>If you no longer wish to receive these emails, click here: <a href="#" style="color:#FFF;">Unsubscribe</a></p>
+            <p style="margin: 50px 0;text-align: center;">
+              <a style="display: inline-block;padding-right: 10px;" href="https://www.facebook.com/jeevgeeta.designers/">
+                <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Facebook</title><path style="fill: #FFF;"d="M45.353 0h-42.706a2.625 2.625 0 0 0-2.647 2.647v42.706a2.625 2.625 0 0 0 2.647 2.647h23.008v-18.569h-6.268v-7.241h6.229v-5.333c0-6.19 3.776-9.577 9.3-9.577a56.108 56.108 0 0 1 5.606.273v6.462h-3.851c-3 0-3.581 1.44-3.581 3.543v4.632h7.163l-.934 7.241h-6.229v18.569h12.263a2.625 2.625 0 0 0 2.647-2.647v-42.706a2.625 2.625 0 0 0-2.647-2.647z"></path></svg>
+</a>
+              <a style="display: inline-block;padding-right: 10px;" href="https://twitter.com/">
+              <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Twitter</title><path style="fill: #FFF;"d="M48 9.117a19.935 19.935 0 0 1-5.658 1.55 9.855 9.855 0 0 0 4.324-5.441 19.789 19.789 0 0 1-6.234 2.374 9.866 9.866 0 0 0-17.045 6.739 9.238 9.238 0 0 0 .252 2.234 27.932 27.932 0 0 1-20.287-10.267 9.555 9.555 0 0 0-1.333 4.937 9.815 9.815 0 0 0 4.36 8.18 9.851 9.851 0 0 1-4.469-1.223v.108a9.858 9.858 0 0 0 7.89 9.656 10.248 10.248 0 0 1-2.595.36 9.932 9.932 0 0 1-1.838-.18 9.946 9.946 0 0 0 9.189 6.847 19.745 19.745 0 0 1-12.213 4.216 16.691 16.691 0 0 1-2.343-.144 28 28 0 0 0 15.1 4.437c18.09 0 28-14.991 28-28 0-.432 0-.865-.036-1.261a20.192 20.192 0 0 0 4.936-5.122z"></path></svg>
+</a>
+              <a style="display: inline-block;padding-right: 10px;" href="https://www.instagram.com/">
+                <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Instagram</title><path style="fill: #FFF;"d="M24 4.324c6.408 0 7.167.024 9.7.14a13.28 13.28 0 0 1 4.456.826 7.436 7.436 0 0 1 2.76 1.8 7.436 7.436 0 0 1 1.8 2.76 13.28 13.28 0 0 1 .826 4.456c.115 2.531.14 3.29.14 9.7s-.024 7.167-.14 9.7a13.28 13.28 0 0 1-.826 4.456 7.948 7.948 0 0 1-4.555 4.555 13.28 13.28 0 0 1-4.456.826c-2.53.115-3.289.14-9.7.14s-7.168-.024-9.7-.14a13.28 13.28 0 0 1-4.456-.826 7.436 7.436 0 0 1-2.76-1.8 7.436 7.436 0 0 1-1.8-2.76 13.28 13.28 0 0 1-.825-4.457c-.115-2.531-.14-3.29-.14-9.7s.024-7.167.14-9.7a13.28 13.28 0 0 1 .826-4.456 7.436 7.436 0 0 1 1.8-2.76 7.436 7.436 0 0 1 2.76-1.8 13.28 13.28 0 0 1 4.45-.82c2.531-.115 3.29-.14 9.7-.14m0-4.324c-6.518 0-7.335.028-9.9.144a17.615 17.615 0 0 0-5.821 1.116 11.764 11.764 0 0 0-4.251 2.768 11.764 11.764 0 0 0-2.768 4.251 17.615 17.615 0 0 0-1.116 5.821c-.116 2.565-.144 3.382-.144 9.9s.028 7.335.144 9.9a17.616 17.616 0 0 0 1.116 5.821 11.765 11.765 0 0 0 2.768 4.251 11.764 11.764 0 0 0 4.251 2.768 17.615 17.615 0 0 0 5.821 1.116c2.565.116 3.382.144 9.9.144s7.335-.028 9.9-.144a17.616 17.616 0 0 0 5.826-1.116 12.272 12.272 0 0 0 7.019-7.019 17.616 17.616 0 0 0 1.111-5.821c.116-2.565.144-3.382.144-9.9s-.028-7.335-.144-9.9a17.616 17.616 0 0 0-1.116-5.821 11.764 11.764 0 0 0-2.768-4.251 11.764 11.764 0 0 0-4.251-2.768 17.616 17.616 0 0 0-5.821-1.116c-2.565-.116-3.382-.144-9.9-.144zm0 11.676a12.324 12.324 0 1 0 12.324 12.324 12.324 12.324 0 0 0-12.324-12.324zm0 20.324a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm12.811-23.691a2.88 2.88 0 1 0 2.88 2.88 2.88 2.88 0 0 0-2.88-2.88z"></path></svg>
+</a>
+              <a style="display: inline-block;padding-right: 10px;" href="https://www.linkedin.com/">
+                <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>LinkedIn</title><path style="fill: #FFF;"d="M0 0v48h48v-48h-48zm14.8 40.64h-6.92v-22.24h6.92v22.24zm-3.48-25.28a4 4 0 1 1 4-4 3.986 3.986 0 0 1-4 4zm22.44 25.28v-10.8c0-2.56-.04-5.88-3.6-5.88-3.6 0-4.16 2.8-4.16 5.72v11h-6.88v-22.28h6.64v3.04h.08a7.21 7.21 0 0 1 6.52-3.6c7 0 8.28 4.6 8.28 10.6v12.2h-6.88z"></path></svg>
+</a>
+              <a style="display: inline-block;padding-right: 10px;" href="https://www.youtube.com/"><svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 721"><title>YouTube</title>
+  <path style="fill: #FFF;"d="M1013,156.3c0,0-10-70.4-40.6-101.4C933.6,14.2,890,14,870.1,11.6C727.1,1.3,512.7,1.3,512.7,1.3h-0.4
+    c0,0-214.4,0-357.4,10.3C135,14,91.4,14.2,52.6,54.9C22,85.9,12,156.3,12,156.3S1.8,238.9,1.8,321.6v77.5
+    C1.8,481.8,12,564.4,12,564.4s10,70.4,40.6,101.4c38.9,40.7,89.9,39.4,112.6,43.7c81.7,7.8,347.3,10.3,347.3,10.3
+    s214.6-0.3,357.6-10.7c20-2.4,63.5-2.6,102.3-43.3c30.6-31,40.6-101.4,40.6-101.4s10.2-82.7,10.2-165.3v-77.5
+    C1023.2,238.9,1013,156.3,1013,156.3z M407,493l0-287l276,144L407,493z"></path>
+</svg>
+</a>
+            </p>
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
