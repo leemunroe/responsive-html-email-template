@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+#output {
+  width: 100%;
+  height: 100%;
+  border-color: lightgray;
+  padding: 10px;
+  font-family: courier;
+  background-color: #333;
+  color: #999;
+  border-radius: 5px;
+}
+
+#render {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.pane {
+  flex: 1;
+  height: 100vh;
+  width: calc(100% / 3);
+}
+
+.pane--render {
+  background-color: #f1f1f1;
+  min-width: 700px;
+}
+
+.pane--info {
+  padding: 20px;
+}
