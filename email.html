@@ -33,7 +33,8 @@
         border-collapse: separate;
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
-        width: 100%; }
+        /*width: 100%; */
+      }
         table td {
           font-family: sans-serif;
           font-size: 14px;
@@ -93,6 +94,10 @@
         text-align: center;
         width: 100%; 
       }
+        .footer table{
+          width: 100%;
+        }
+
         .footer td,
         .footer p,
         .footer span,
@@ -151,22 +156,22 @@
       .btn {
         box-sizing: border-box;
         width: 100%; }
-        .btn > tbody > tr > td {
+        .btn-td {
           padding-bottom: 15px; }
-        .btn table {
+        .btn-td table {
           width: auto; 
       }
-        .btn table td {
-          background-color: #ffffff;
+        .btn-td table td {
+          background-color: #3498db;
           border-radius: 5px;
           text-align: center; 
       }
-        .btn a {
-          background-color: #ffffff;
+        .btn-td a {
+          background-color: #3498db;
           border: solid 1px #3498db;
           border-radius: 5px;
           box-sizing: border-box;
-          color: #3498db;
+          color: #fff;
           cursor: pointer;
           display: inline-block;
           font-size: 14px;
@@ -177,7 +182,7 @@
           text-transform: capitalize; 
       }
 
-      .btn-primary table td {
+      /*.btn-primary table td {
         background-color: #3498db; 
       }
 
@@ -185,7 +190,7 @@
         background-color: #3498db;
         border-color: #3498db;
         color: #ffffff; 
-      }
+      }*/
 
       /* -------------------------------------
           OTHER STYLES THAT MIGHT BE USEFUL
@@ -354,7 +359,7 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
                             <tr>
-                              <td align="left">
+                              <td align="left" class="btn-td">
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
