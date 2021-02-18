@@ -8,13 +8,13 @@ Sometimes all you want is a really simple responsive HTML email template with a 
 
 ## Inline your CSS before sending
 
-Email is notorious for inconsistent CSS support. Therefore you should always inline your CSS before sending.
+Email is notorious for inconsistent CSS support. Therefore you should always inline your CSS and send a test to yourself before sending.
 
 ### Sending emails directly from your codebase or using a developer service?
 
 For an API service (like Mailgun, SendGrid, Postmark) **you need to inline the CSS before sending**. See `email-inlined.html` for an example.
 
-You can use this [Email CSS Inliner](https://htmlemail.io/inline/) or a module like [Juice](https://github.com/Automattic/juice) to do this automatically.
+You can use this [Email CSS Inliner](https://htmlemail.io/inline/) and then [send a test email to yourself](https://postdrop.io) to verify it works as expected. 
 
 * Copy all of email.html
 * Paste the HTML as the source into the inliner
@@ -54,6 +54,7 @@ Tested on mobile, desktop and web.
 * [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
 * [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
+* [Manage and Send Email Templates To Yourself](https://postdrop.io)
 
 This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
 [![image](https://user-images.githubusercontent.com/15963/49354042-c0bcb800-f675-11e8-92ef-7e9987b85bf6.png)](https://htmlemail.io)
