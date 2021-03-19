@@ -57,4 +57,4 @@ Tested on mobile, desktop and web.
 * [Manage and Send Email Templates To Yourself](https://postdrop.io)
 
 This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
-[![image](https://user-images.githubusercontent.com/15963/49354042-c0bcb800-f675-11e8-92ef-7e9987b85bf6.png)](https://htmlemail.io)
+[![image](https://user-images.githubusercontent.com/15963/111846354-df393280-88c3-11eb-959c-10a3916d5733.png)](https://htmlemail.io)
