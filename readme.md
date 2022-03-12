@@ -14,11 +14,11 @@ Email is notorious for inconsistent CSS support. Therefore you should always inl
 
 For an API service (like Mailgun, SendGrid, Postmark) **you need to inline the CSS before sending**. See `email-inlined.html` for an example.
 
-You can use this [Email CSS Inliner](https://htmlemail.io/inline/) and then [send a test email to yourself](https://postdrop.io) to verify it works as expected. 
+You can use this [Email CSS Inliner](https://htmlemail.io/inline/) and then [send a test email to yourself](https://postdrop.io) to verify it works as expected.
 
-* Copy all of email.html
-* Paste the HTML as the source into the inliner
-* Copy the HTML output and use this as the email template you send
+- Copy all of email.html
+- Paste the HTML as the source into the inliner
+- Copy the HTML output and use this as the email template you send
 
 ### Sending emails using a marketing service like Mailchimp?
 
@@ -28,11 +28,11 @@ Use the template `email.html` as is. They'll put the CSS inline for you when you
 
 When inserting images remember to include the following attributes or risk them breaking in different clients:
 
-* `src`
-* `alt`
-* `width`
-* `height`
-* `border`
+- `src`
+- `alt`
+- `width`
+- `height`
+- `border`
 
 Example:
 
@@ -42,7 +42,7 @@ Example:
 
 ## Tried and tested on all major email clients
 
-Tested on mobile, desktop and web.
+Tested on mobile, deskcenter and web.
 
 ![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
 
@@ -50,11 +50,11 @@ Tested on mobile, desktop and web.
 
 ## More HTML email resources
 
-* [10 HTML Email Templates for Developers](https://htmlemail.io)
-* [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
-* [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
-* [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
-* [Manage and Send Email Templates To Yourself](https://postdrop.io)
+- [10 HTML Email Templates for Developers](https://htmlemail.io)
+- [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
+- [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
+- [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
+- [Manage and Send Email Templates To Yourself](https://postdrop.io)
 
 This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
 [![image](https://user-images.githubusercontent.com/15963/111846354-df393280-88c3-11eb-959c-10a3916d5733.png)](https://htmlemail.io)
