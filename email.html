@@ -18,7 +18,7 @@
       }
 
       body {
-        background-color: #f6f6f6;
+        background-color: aliceblue;
         font-family: sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
@@ -34,10 +34,10 @@
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
         width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 14px;
-          vertical-align: top; 
+      table td {
+        font-family: sans-serif;
+        font-size: 14px;
+        vertical-align: top; 
       }
 
       /* -------------------------------------
@@ -45,12 +45,14 @@
       ------------------------------------- */
 
       .body {
-        background-color: #f6f6f6;
+        background-color: aliceblue;
         width: 100%; 
       }
 
       /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
       .container {
+        border-radius: 15px;
+        background-color: darkgrey;
         display: block;
         margin: 0 auto !important;
         /* makes it centered */
@@ -61,6 +63,8 @@
 
       /* This should also be a block element, so that it will fill 100% of the .container */
       .content {
+        
+        border-radius: 30px;
         box-sizing: border-box;
         display: block;
         margin: 0 auto;
@@ -72,8 +76,8 @@
           HEADER, FOOTER, MAIN
       ------------------------------------- */
       .main {
-        background: #ffffff;
-        border-radius: 3px;
+        background: #ffffffbb;
+        border-radius: 10px 10px 40px 40px;
         width: 100%; 
       }
 
@@ -97,7 +101,7 @@
         .footer p,
         .footer span,
         .footer a {
-          color: #999999;
+          color: #000000;
           font-size: 12px;
           text-align: center; 
       }
@@ -178,7 +182,7 @@
       }
 
       .btn-primary table td {
-        background-color: #3498db; 
+        background-color: #246bbd; 
       }
 
       .btn-primary a {
@@ -351,10 +355,12 @@
                       <td>
                         <p>Hi there,</p>
                         <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
+                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
+                        <p>Good luck! Hope it works.</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                           <tbody>
                             <tr>
-                              <td align="left">
+                              <td align="center">
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
@@ -366,8 +372,6 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p>
                       </td>
                     </tr>
                   </table>
