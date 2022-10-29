@@ -1,0 +1,341 @@
+HTML:
+- HTML stands for Hypertext Markup Language.
+- This is one of the core language to develop websites among css and javascript.
+- Any html document contains an extension of .html or .htm
+- Any html document's output is displayed in browser.
+- A html document contains html tags which performs different functions in the browser.
+- Html tag is not displayed in browser rather it is parsed by the browser and the contents in html tag is displayed as output in browser.
+- Html is a static programming language that is it displays only the static content in the webpage.
+- Static programming language means the content is not changed rather we reload the webpage for several times also.
+- We can apply the dynamic nature to html webpages by using javascript.
+- The complete html document is represented inside a tag called <html>.......</html>.
+- The html tag consists of 2 main parts:
+1.head section - head section is represented by <head>.....</head>
+2.body section - body section is represented by <body>.....</body>
+- Basic html structure:
+	<html>
+	<head>.....</head>
+	<body>.....</body>
+	</html>
+
+- head section contains information like meta information and website's title and few css configuration and some javascript configuration.
+- body section contains the actual content which is displayed in the webpage as output or result.
+- Stucture of HTML Document:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+1.<!DOCTYPE html> - it describes the document type to be html.
+2.<html lang="en"> - it describes the html document tag is opened and content which is written inside the html document follows english language.
+3.<meta charset="UTF-8"> - it is the meta information of the webpage and utf-8 stands for Uniform Transformation Format of 8 bit. It is used for encoding of webpages. encode means it supports many languages and it can accomodate many pages and forms in any mixture of language.
+4. <title> - it represents the title of the webpage.
+
+<!-- comments --> - it is used to give the comment in html document. The comments are not displayed or executed in the web page. The comments are necessary for our own reference in the html document.
+
+Rules for writing a html document:
+1.Each content which is displaying in the webpage should be written in between a html tag.
+2.all the html tags should be written in lowercase.
+3.always add an ending tag if required, that means some html tags donot have a closing tag.
+
+
+HTML HEADINGS:
+- If you want a heading in your webpage then we have heading tag which is represented by <h>...</h>
+- There are 6 types of heading:
+1.<h1>....</h1> - main heading
+2.<h2>....</h2> - sub heading
+3.<h3>....</h3> 
+4.<h4>....</h4> 
+5.<h5>....</h5> 
+6.<h6>....</h6> - least heading
+
+HTML PARAGRAPHS:
+- We can display paragraphs in html webpages with the help of <p>....</p>.
+- If we write any content inside the p tag it is considered as paragraph.
+- The number of lines of paragraph in the html documents is not same as the number of lines that are displayed in the browser.
+- The number of lines represented in the webpage is decided by the browser based on the width of the browser.
+- If we want to display the same number of lines as per the html document and the web browser then we have to use <pre>....</pre>.
+
+Shortcut to generate the paragraph with words automatically:
+lorem50(press tab) - it will generate 50words line.
+
+Q. Create 4 movies of holly,bolly,tolly,olly.but olly must have pre tag.
+
+HTML DIVISIONS:
+- We can have html divisions which is represented as <div>.....</div>.
+- div tag is generally used to divide a html document or the entire webpage into various sections or divisions using div tag.
+- div tag is often used as container for the other html elements and to style them using css.
+- by default div tag do not have any styles, if you want to apply any style to div tag then we have use css.
+
+HTML SPAN:
+- html span is represented by <span>....</span>.
+- if you want to apply styles to a particular word,alphabet or a group of words then we have to use span tag.
+
+HTML TEXT FORMATTING:
+- Text formatting styles:
+<b> - bold text
+<i> - italic text
+<em> - emphasized text
+<small> - small text
+<sub> - subscript text
+<sup> - superscript text
+<del> - deleted text
+<ins> - underline or insert text
+
+Q. Create a webpage with heading as Mixed Text and write a paragraph under mixed text containing all the text format.
+
+HTML UNORDERED LIST:
+- In html unordered list is represented by a tag called <ul>.....</ul>.
+- Each of the list item is represented by a tag called <li>.....</li>.
+- The list of items is displayed inside the ul tag.
+- By default the bullentin or the list is represented by disc type of attribute, if the type attribute in ul tag is not mentioned.
+- There are 4 types of attribute: disc,square,circle,none
+
+HTML ORDERED LIST:
+- In html ordered list is represented by a tag called <ol>......</ol>.
+- Each of the list item inside ol tag is represented by a tag called <li>......</li>.
+- The list items are displayed inside the ol tag.
+- By default the bulletin or the list is represented by 1,2,3,4,5... , if the type attribute is not mentioned inside the ol tag.
+- There are 5 types of attribute: 1,a,A,i,I
+
+HTML IMAGES:
+- We can display the images in the web browser by using the <img>.
+- img tag do not have any closing tag.
+- img tag consists of different attributes:
+1. src - represents the path or link of the image that is to be displayed in the web browser.
+2. alt - represents alternative text i.e if the image is not displayed by any cause in the web browser, then the text passed inside the alt attribute is displayed in the place of image. If the image is displayed then the arlternative text is not displayed. The use of alt attribute is the user can know what is the image if the image is not displayed.
+3. width , height - represents the width and height of the image to be customized by your own. The default size of the image is displayed in the web browser, if you want customize the image you have to use width and height.
+- We can apply respective css to the images for styling.
+
+HTML TABLES:
+- In html tables can be displayed in the webpage with the help of <table>.......</table>.
+- Each html table have 2 sections such as head and body.
+1. The head part of the table is represented by <thead>.....</thead>
+2. The body part of the table is represented by <tbody>.....</tbody>
+- Each row in the html table is represented by <tr>.....</tr>
+- Each cell inside row of thead is represented by <th>....</th>
+- Each cell inside row of tbody is represented by <td>....</td>
+- Simple Structure of table:
+<body>
+<table>
+	<thead>
+		<tr>
+		<th>Employee Name</th>
+		<th>Employee Location</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		<td>Soumya Ranjan</td>
+		<td>Bangalore</td>
+		</tr>
+		<tr>
+		<td>Smruti Ranjan</td>
+		<td>Odisha</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+- Html table by default have no border displayed in the webpage, if you want to display the table with borders then you have to apply css to the table.
+- Html tables have 2 special attributes:
+1.colspan - this attribute is used to combine 2 or more number of columns in a table.
+2.rowspan - this attribute is used to combine 2 or more number of rows in a table.
+
+Q. Create a table with 5 employee data i.e id,name,company,location,designation,salary.
+	1. company,location and designation column should be merged.
+	2. 3 employees should have 1 id.(1001,1002,1003 and 1002 should be assigned to 3 employees)
+	3. 5th number employee data of company-location-designation should be merged.
+
+Q. Create a table with 4 students(2 boys and 2 girls) data i.e Student and marks. Student should be divided into Boys and Girls and Marks should be divided into 3 subjects i.e physics,chemistry and bio.
+
+Q. Create a table with 5 employee data i.e id,name,company,location,designation,salary
+	1.2 employees should have the same company.
+	2.2 employees should have same designation.
+	3.2 employees should have same id.
+	4.2 employees should have same name.
+
+HTML ENTITIES:
+- These are the reserved characters and few symbols which are displayed on the webpage.
+1. < - &lt;
+2. > - &gt;
+3. Copyright Symbol - &copy;
+4. Reg Trademark - &reg;
+5. Dollar Symbol - &#36;
+6. Ruppees Symbol - &#8377;
+
+
+HTML LINKS:
+- In html normal text can be converted into a clickable link or hyperlink or hypertext by using <a>....</a>.
+- <a> tag is called anchor tag.
+- hyperlinks are the clickable links and once we click on those links the control will jump to the specified href location.
+- href stands for hyper reference.
+- href is an attribute inside the anchor tag and we have to pass the link address in href.
+- syntax:
+	<a href="https://google.com">google</a>
+- hyperlinks can be used to open the local files in your system as well as  the external links like google,facebook,youtube etc.
+
+- html links have an important attribute names as target.
+- target specifies where to open the linked document.
+	1._blank - opens the linked document in a new window or tab
+	2._self - opens the linked document in the same window or tab and this is the default target if we dont mention any 		target.
+	3._parent - opens the linked document in the parent frame.
+	4._top - opens the linked document in the full body of the window.
+
+- images can also be considered as html hyperlinks.
+- we can download a particular file by using html links but we have to pass an attribute i.e download="name" in anchor tag.
+- links can be used as bookmarks in the same webpage.
+- bookmarks are used to allow the readers to jump to a specific parts of web page.
+- bookmarks can be useful if the page is too long.
+- we can jump to a specific by clicking on the link of the provided specific part and the page will scroll automatically to the same part.
+- If you want to use the link as a bookmark then we have to give ID for the specific parts.
+
+HTML IFRAMES:
+- Html iframes are used to display a webpage within another webpage.
+- using iframe tag in webpage we can load a frame of another webpage.
+- syntax:
+	<iframe src="URL"></iframe>
+- Iframe has its own width and height, but we can customize by passing width and height attribute in iframe tag.
+- The important use of iframe is : we can display the youtube videos in our webpage using iframe tag.
+	1. open youtube and select the video for the webpage.
+	2. click on share link and click on embed link.
+	3. copy the iframe tag from there and paste in the html file
+
+HTML FORMS:
+- A html form is simply an area which contains various form fields.
+- Html forms are used to collect the user information and send the user information to a program which is running in server side for further processing.
+- Html form contains various form fields such as text box, password box, radio button, select box, text area and other input fields. When user enters or fills the data in the form and click on submit button, then the whole form data will be sent to a respective server for further processing.
+- in html forms are represented by a tag called <form>......</form>.
+- form tag act as root tag for all the html form elements.
+- Html form elements are divided into 3 categories:
+	- Html form elements
+	- html form input types
+	- html form attributes
+
+a. Html form element:
+- form elements are used to display various form fields such as text box , password box, radio button, check box, text area , buttons etc.
+	1.<lable>....</label> - This tag is used to define a label information for any form field.
+	2.<input>...</input> - This tag is used to display almost all the input fields on the webpages like text box, 			password box, submit button, reset button, date selection, range selection etc..
+	3.<select>....</select> - this tag is used to display a select box on the webpage. This is also called as dropdown 			list.
+	4.<option>....</option> - this tag is used to create option inside the select tag.Each option inside select tag is 			displayed by option tag.
+	5.<optgroup>....</optgroup> - this tag is used to subgroup the options inside the select tag.
+	6.<textarea>....</textarea> - this tag is basically used to display a message box or comment box on the 			webpage.text area contains 2 mandatory attributes:
+			a.rows - indicates the height of the textarea
+			b.cols - indicates the width of the textarea
+	7.<datalist>.....</datalist> - this tag is introduced in html5. it is same as select box but datalist is more refined 			version of select box as in datalist we can search a particular option or with matching keywords of the 			option.
+		- datalist tag should be written after the input tag and input tag should have a attribute called 			list="name".(name is given by us).
+		- datalist tag should have an attribute called id and the name of the id should be same as the name of 			the list in input tag.
+
+Q. Create a from with proper alignment having form fields as:
+	1.Full name
+	2.Father's Name
+	3.Mother's Name
+	4.Username
+	5.Password
+	6.Technology selection box
+	7.gender selection box
+	8.address area
+
+
+b. Html form input types:
+- html form input types are used to display various input fields with only one tag called input tag.
+- Inorder to display various input fields we use only input tag but the extra changes are made in type attribute.
+- Depending on type attribute the input field changes.
+- There are different values for the type attribute:
+1. type = text - this is used to display text box on the webpage.
+2. type = password - this is used to display password box on the weboage.
+3. type = submit - this is used to display submit button on the webpage.once user enters the data in the form and clicks on submit button then the user filled information in the form is sent to a server where the further processing is done. In addition to this we write another attribute called value = 'name'. The name in the value is displayed as the button name on the browser.
+4. type = reset - this is used to display a reset button on the webpage.once the user enters the data in the form and click on reset then the form data is cleared without any further processing.In addition to this we write another attribute called value = 'name'. The name in the value is displayed as the button name on the browser.
+5. type = radio - this attribute is used to display a radio button on the webpage. radio button is used to select only one input choice among many input choices.
+	Note: Here we have name attribute which is mandatory and the value of name attribute should be same for all 	choices.In addition to this we have value attribute which holds the original value of the choices.
+6. type = checkbox - this attribute is used to display a checkbox on the webpage. this checkbox lets the user to select zero or more number of choices among the displayed checkboxes.
+	Note: Here we only have the attribute value which holds the original value of the checkbox.
+- HTML5 input type:
+7. type = color - This attribute is used for color selection among various colors on the webpage.
+8. type = date - This attribute is used for date selection. Here it will display a calendar to select a date.
+9. type = datetime-local - this attribute is used to select date as well as time. Basically this is date and time selection box.
+10. type = email - this is used to display an email box. this seems to be like normal text box but in the backend there is an email validation that will occur when user input his email id. it used a pattern for default email validation.
+11. type = month - this attribute is used for month selection. This will also display a calendar but here we can be only able to select a specific month from the calendar.
+12. type = number - this attribute is used for number selection box. Here we can accept only numbers and we cannot be able to enter any other character other than number except 'e' as 'e' refers to exponential value. Here we can do default validation as we can apply attributes called min and max.
+	min - the value in min represents the minimum, if the user inputs a number less than min value then it pops up a 	message to enter a value more than minimum value.
+	max - the value in max represents the maximum, if the user inputs a number greater than max value then it pops up 	a message to enter a value less than maximum value.
+13. type = range - this is used for range selection. Here we can also be able to provide two attributes as min and max for the range.
+14. type = search - this is used to display a search box in the webpage. This is almost same as text box but a little difference is here in the search box we will get a cross symbol at the end of the box to reset the search query.
+15. type = time - this is used for time selection on the webpage. here no clock displayed by default.  we need to enter the time manually.
+16. type = url - this is used for url validation box. here they used a default validation for url selection. it expects a pattern of 'http://'.
+17. type = file - this is used for uploading of files to the browser.
+18. type = week - this is used to select week of the calendar.
+
+
+c.HTML Form Input Attributes:
+- In html forms there are some special attributes available which provide special effects for the input fields.
+- ex - readonly - this attribute disables the modification of input field.
+- There are different form input attributes i.e:
+1. value - Each Html form field have value attribute, this is having connection with the server side program. Once the users fills in the form, then this value attribute will hold the actual value of that specific form field. If we consider value with some data in text box then it is the by default value which will be displayed in the text box of browser.
+2. readonly - This attribute is used to make any input field as read-only field. If any input field is declared with this attribute, then the input field is unmodifiable.
+3. disabled - This attribute is used to disable an input field. This is same as read-only but this is better option than read-only.
+4. size - This attribute is used to decrease or increase the size of the input field. Basically it used to increase or decrease the size of the text box or password box.
+5. rows,cols - These attributes are used with textarea box. rows indicate the height of the textarea and cols indicate the width of the textarea. 
+6. maxlength - This attribute is used with textarea box only, and any length passed in this attribute enables the acceptance of characters in textarea.
+HTML5 Input attributes:
+7. required - By default all the input fields are optional fields in the html. We can convert them as mandatory fields or required fields by this attribute.
+8. novalidate - By default most of the html5 form fields are having its own validation messages, in order to disable this default validation message we have to use novalidate attribute. Novalidate attribute is used in form tag.
+9. autofocus - By default none of the form field is focused automatically, if you want to focus automatically the input field then we have to use autofocus.
+10. pattern - Most of the html5 form fields are using its own default pattern. If you to override the pattern of eaach form field we have to use this attribute.
+11. placeholder - It is replacement of label tag. The label text will be displayed inside the input field itself.
+
+
+HTML5 TAGS:
+1. HTML SECTION & HTML ARTICLE:
+- The <section>....</section> tag is used to divide the webpage into various sections. A home page can be divided into various sections like introduction, content and contact information/copyright section.
+
+- The <article>....</article> tag is written inside section tag and article is basically used for writing the content like news article, blog posts etc. Article tag specified independent content.
+
+2. HTML HEADER & HTML FOOTER:
+- The <header>.....</header> is basically used for writing the company heading which is placed at the top of the webpage. It consists of information of the company as title or sub title.
+
+- The <footer>.....</footer> is basically used for writing the signature or the copyright section at the bottom of the webpage. It generally contains the contact information, copyrights and registered information, author of document, links to the terms of use, terms&conditions.
+
+3. HTML ASIDE ELEMENT:
+- The <aside>...</aside> tag is used to define some content which is aside from the main content and it is placed as a side bar vertically in the webpage.
+- The aside bar consists of link to navigate through the webpages.
+
+4. HTML NAVIGATION ELEMENT:
+- The <nav>.....</nav> tag is used to define a set of navigation links of the webpages.
+- This nav bar is placed horizontally in the webpage and it is used to navigate through the webpages.
+
+5. HTML DETAILS & HTML SUMMARY:
+- html details specifies additional details that the user can view or hide on demand.
+- it is represented by <details>....</details>.
+- details tag is used to create an interactive widget which  basically opens and close.
+
+- html summary defines a visible heading for the details tag.
+- it is represented by <summary>.....</summary>.
+
+6. HTML AUDIO & HTML VIDEO ELEMENTS:
+- Represented by <audio>.....</audio> tag and it is used to play audio in the web browser from the local system.
+- We have to consider an attribute inside the audio tag i.e controls(i.e it provides the controls for the audio in the web browser like play/pause, download option, volume controls).
+- inside the audio tag we have to consider the <source>......</source>.
+- in the source tag we have to consider the attributes i.e
+1. src - represents the path of the file.
+2. type - audio/mp3
+- Mostly preferred file format is mp3.
+
+
+- Represented by <video>...</video> tag and it is used to play video in the web browser from the local system.
+- We have to consider an attribute inside the video tag i.e controls(i.e it provides the controls for the video in the web browser like play/pause, download option, volume controls, expand options).
+- inside the video tag we have to consider the <source>......</source>.
+- in the source tag we have to consider the attributes i.e
+1. src - represents the path of the file.
+2. type - video/mp4
+- Mostly preferred file format is mp4.
+
+
+
+
+
