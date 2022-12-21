@@ -46,7 +46,7 @@ Tested on mobile, desktop and web.
 
 ![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
 
-[See the Litmus test results](https://litmus.com/checklist/emails/public/233ded7).
+[See the Litmus test results](https://litmus.com/checklist/emails/public/P3UUCeDcoqdLWITE).
 
 ## More HTML email resources
 
