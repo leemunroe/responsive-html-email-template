@@ -1,3 +1,17 @@
+Subject: Merry Christmas 09:33:22 +0000 Message-ID: Content-Language: de-DE
+X-MS-Has-Attach: yes X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0 Content-Type:
+multipart/related;
+boundary="_004_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_";
+type="multipart/alternative" MIME-Version: 1.0
+--_004_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_ Content-Type:
+multipart/alternative;
+boundary="_000_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_"
+--_000_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_ Content-Type:
+text/plain; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
+--_000_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_ Content-Type:
+text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,6 +36,7 @@
         font-family: sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
+        color: #ff4a11;
         line-height: 1.4;
         margin: 0;
         padding: 0;
@@ -46,8 +61,9 @@
       ------------------------------------- */
 
       .body {
-        background-color: #f6f6f6;
+        background-color: none;
         width: 100%;
+        color: #ff4a11;
       }
 
       /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
@@ -58,7 +74,6 @@
         max-width: 580px;
         padding: 10px;
         width: 580px;
-        background-image: url(https://drive.google.com/file/d/1mgftoyUGuSzQb_-L-9Yn-DOgRzTI0Xnv/view?usp=drive_link);
       }
 
       /* This should also be a block element, so that it will fill 100% of the .container */
@@ -74,9 +89,12 @@
           HEADER, FOOTER, MAIN
       ------------------------------------- */
       .main {
-        background: #ffffff;
+        background-color: none;
         border-radius: 3px;
         width: 100%;
+        background: no-repeat
+          url("https://images.unsplash.com/photo-1512389055488-8d82cb26ba6c?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        position: relative;
       }
 
       .wrapper {
@@ -287,6 +305,7 @@
         table.body .btn a {
           width: 100% !important;
         }
+
         table.body .img-responsive {
           height: auto !important;
           max-width: 100% !important;
@@ -340,114 +359,24 @@
       >This is preheader text. Some clients will show this text as a
       preview.</span
     >
-    <table
-      role="presentation"
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      class="body"
-    >
-      <tr>
-        <td>&nbsp;</td>
-        <td class="container">
-          <div class="content">
-            <!-- START CENTERED WHITE CONTAINER -->
-            <table role="presentation" class="main">
-              <!-- START MAIN CONTENT AREA -->
-              <tr>
-                <td class="wrapper">
-                  <table
-                    role="presentation"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                  >
-                    <tr>
-                      <td>
-                        <p>Hi there,</p>
-                        <p>
-                          Sometimes you just want to send a simple HTML email
-                          with a simple design and clear call to action. This is
-                          it.
-                        </p>
-                        <table
-                          role="presentation"
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="btn btn-primary"
-                        >
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table
-                                  role="presentation"
-                                  border="0"
-                                  cellpadding="0"
-                                  cellspacing="0"
-                                >
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <a
-                                          href="http://htmlemail.io"
-                                          target="_blank"
-                                          >Call To Action</a
-                                        >
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>
-                          This is a really simple email template. Its sole
-                          purpose is to get the recipient to click the button
-                          with no distractions.
-                        </p>
-                        <p>Good luck! Hope it works.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+    <div class="main">
+      <div style="position: absolute; z-index: 20">
+        <p>Hi there,</p>
+        <p>
+          this is a simple tryout to use html as an email template for outlook.
+        </p>
+      </div>
+    </div>
+    <!-- END CENTERED WHITE CONTAINER -->
 
-              <!-- END MAIN CONTENT AREA -->
-            </table>
-            <!-- END CENTERED WHITE CONTAINER -->
-
-            <!-- START FOOTER -->
-            <div class="footer">
-              <table
-                role="presentation"
-                border="0"
-                cellpadding="0"
-                cellspacing="0"
-              >
-                <tr>
-                  <td class="content-block">
-                    <span class="apple-link"
-                      >Company Inc, 3 Abbey Road, San Francisco CA 94102</span
-                    >
-                    <br />
-                    Don't like these emails?
-                    <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by">
-                    Powered by <a href="http://htmlemail.io">HTMLemail</a>.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- END FOOTER -->
-          </div>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
+    <!-- START FOOTER -->
+    <div class="footer">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="content-block"></td>
+        </tr>
+      </table>
+    </div>
+    <!-- END FOOTER -->
   </body>
 </html>
