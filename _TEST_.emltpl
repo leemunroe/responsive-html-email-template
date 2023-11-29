@@ -1,7 +1,5 @@
-Subject: Merry Christmas 09:33:22 +0000 Message-ID: Content-Language: de-DE
-X-MS-Has-Attach: yes X-MS-TNEF-Correlator:
-X-MS-Exchange-Organization-RecordReviewCfmType: 0 Content-Type:
-multipart/related;
+X-MS-TNEF-Correlator: X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/related;\r\n
 boundary="_004_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_";
 type="multipart/alternative" MIME-Version: 1.0
 --_004_GV1P193MB2087002C7AC8F1D4DDFF161FF4B0AGV1P193MB2087EURP_ Content-Type:
@@ -23,14 +21,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
           GLOBAL RESETS
       ------------------------------------- */
 
-      img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%;
-      }
-
       body {
-        background-color: #000;
         font-family: Arial, Helvetica, sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
@@ -79,13 +70,8 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
         background-color: none;
         border-radius: 3px;
         width: 100%;
-        background-image: url(https://images.unsplash.com/photo-1512389055488-8d82cb26ba6c?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
       }
-      .bgimg {
-        width: 400px;
-        height: auto;
-        align-self: center;
-      }
+
       .wrapper {
         box-sizing: border-box;
         padding: 20px;
@@ -136,7 +122,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
       ul,
       ol {
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 16pt;
         font-weight: normal;
         margin: 0;
         margin-bottom: 15px;
@@ -179,7 +165,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
         color: #3498db;
         cursor: pointer;
         display: inline-block;
-        font-size: 14px;
+        font-size: 16pt;
         font-weight: bold;
         margin: 0;
         padding: 12px 25px;
@@ -269,7 +255,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
         table.body td,
         table.body span,
         table.body a {
-          font-size: 16px !important;
+          font-size: 16pt !important;
         }
         table.body .wrapper,
         table.body .article {
@@ -343,10 +329,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
     </style>
   </head>
   <body>
-    <span class="preheader"
-      >This is preheader text. Some clients will show this text as a
-      preview.</span
-    >
+    <span class="preheader">Merry Christmas...</span>
     <table
       role="presentation"
       border="0"
@@ -371,14 +354,22 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
                   >
                     <tr>
                       <td>
-                        <div style="display: block">
-                          <div class="background-container">
-                            <h1>Happy Holidays</h1>
-                            <img
-                              src="https://images.unsplash.com/photo-1512389055488-8d82cb26ba6c?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                              class="bgimg"
-                            />
-                          </div>
+                        <div
+                          style="
+                            display: block;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                          "
+                        >
+                          <h1 style="margin-bottom: 40px">Happy Holidays</h1>
+                          <img
+                            src="https://images.ctfassets.net/m8n66tuamygx/2WfRYsTkmJ9G5qIrFVlhpx/df1e64182d6c9c620f805554c3e9f3ea/FG_1200x640_Christmascard_V1_white.png"
+                            width="800"
+                            style="width: 800px; margin-top: 0px"
+                          />
+
                           <div style="margin-top: 50px">
                             <p align="center">Hi there,</p>
                             <p align="center">
