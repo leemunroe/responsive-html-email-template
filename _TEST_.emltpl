@@ -122,7 +122,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
       ul,
       ol {
         font-family: sans-serif;
-        font-size: 16pt;
+        font-size: 18px;
         font-weight: normal;
         margin: 0;
         margin-bottom: 15px;
@@ -165,7 +165,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
         color: #3498db;
         cursor: pointer;
         display: inline-block;
-        font-size: 16pt;
+        font-size: 18px;
         font-weight: bold;
         margin: 0;
         padding: 12px 25px;
@@ -255,7 +255,7 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
         table.body td,
         table.body span,
         table.body a {
-          font-size: 16pt !important;
+          font-size: 18px !important;
         }
         table.body .wrapper,
         table.body .article {
@@ -371,8 +371,10 @@ text/html; charset="iso-8859-1" Content-Transfer-Encoding: quoted-printable
                           />
 
                           <div style="margin-top: 50px">
-                            <p align="center">Hi there,</p>
-                            <p align="center">
+                            <p align="center" style="font-size: 20px">
+                              Hi there,
+                            </p>
+                            <p align="center" style="font-size: 20px">
                               this is a simple tryout to use html as an email
                               template for outlook.
                             </p>
