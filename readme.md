@@ -4,7 +4,7 @@ Sometimes all you want is a really simple responsive HTML email template with a 
 
 [See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
 
-<img src="https://user-images.githubusercontent.com/15963/29055956-8dcca38e-7bb4-11e7-8a86-7b056ebf673d.png" alt="Simple HTML Email" width="500">
+<img src="https://github.com/leemunroe/responsive-html-email-template/assets/15963/29595188-d4f3-4236-877d-6488c159140d" alt="Simple HTML Email Template" width="500">
 
 ## Inline your CSS before sending
 
@@ -44,7 +44,7 @@ Example:
 
 Tested on mobile, desktop and web.
 
-![Templates Tested on Email Clients](https://cloud.githubusercontent.com/assets/15963/17391543/bc289abe-59cb-11e6-9946-605a85f8c522.jpg)
+<img width="1424" alt="Tested on Email Clients" src="https://github.com/leemunroe/responsive-html-email-template/assets/15963/a5920027-f27d-41aa-bcbe-a3693f9d3277">
 
 ## More HTML email resources
 
