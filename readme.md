@@ -44,7 +44,8 @@ Example:
 
 Tested on mobile, desktop and web.
 
-<img width="1424" alt="Tested on Email Clients" src="https://github.com/leemunroe/responsive-html-email-template/assets/15963/a5920027-f27d-41aa-bcbe-a3693f9d3277">
+<img width="1424" alt="Tested on Email Clients" src="[https://github.com/leemunroe/responsive-html-email-template/assets/15963/a5920027-f27d-41aa-bcbe-a3693f9d3277](https://github.com/leemunroe/responsive-html-email-template/assets/15963/d7039cc1-7133-4968-9907-91a9136d55ab)">
+
 
 ## More HTML email resources
 
