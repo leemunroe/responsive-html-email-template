@@ -44,8 +44,7 @@ Example:
 
 Tested on mobile, desktop and web.
 
-<img width="1424" alt="Tested on Email Clients" src="[https://github.com/leemunroe/responsive-html-email-template/assets/15963/a5920027-f27d-41aa-bcbe-a3693f9d3277](https://github.com/leemunroe/responsive-html-email-template/assets/15963/d7039cc1-7133-4968-9907-91a9136d55ab)">
-
+<img width="1424" alt="Tested on Email Clients" src="https://github.com/leemunroe/responsive-html-email-template/assets/15963/a5920027-f27d-41aa-bcbe-a3693f9d3277">
 
 ## More HTML email resources
 
@@ -56,4 +55,5 @@ Tested on mobile, desktop and web.
 * [Manage and Send Email Templates To Yourself](https://postdrop.io)
 
 This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
-[![image](https://user-images.githubusercontent.com/15963/111846354-df393280-88c3-11eb-959c-10a3916d5733.png)](https://htmlemail.io)
+[![image](https://github.com/leemunroe/responsive-html-email-template/assets/15963/61d4a6d7-bd0e-4241-b4e5-d766162df192)](https://htmlemail.io)
+
