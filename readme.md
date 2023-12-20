@@ -48,7 +48,8 @@ Tested on mobile, desktop and web.
 
 ## More HTML email resources
 
-* [10 HTML Email Templates for Developers](https://htmlemail.io)
+* [10 Premium HTML Email Templates for Developers](https://htmlemail.io)
+* [Free Figma Email Template Design System](https://htmlemail.io/design-system)
 * [An Introduction To Building And Sending HTML Email](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
 * [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
