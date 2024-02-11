@@ -1,13 +1,14 @@
 # Responsive HTML Email Template
 
-Notice: This is a fork of the [Free Responsive HTML Email Template](https://github.com/leemunroe/responsive-html-email-template) repository by [Lee Munroe](https://github.com/leemunroe).
+Note: this is a fork of the [Free Responsive HTML Email Template](https://github.com/leemunroe/responsive-html-email-template) repository by [Lee Munroe](https://github.com/leemunroe).
 
+Example preview:
 
 <img src="example-preview.png?v=a1" alt="Simple HTML Email Template" width="700">
 
 ## Inline your CSS before sending
 
-Email is notorious for inconsistent CSS support. Therefore you should always inline your CSS and send a test to yourself before sending.
+Email is notorious for inconsistent CSS support. You should always inline your CSS and send a test to yourself before using this template in your system.
 
 ### Sending emails directly from your codebase or using a developer service?
 
@@ -41,4 +42,4 @@ Example:
 
 ## Tried and tested on all major email clients
 
-For template compatibility list please visit the [oryginal repository](https://github.com/leemunroe/responsive-html-email-template).
+For compatibility overview please visit the [original repository](https://github.com/leemunroe/responsive-html-email-template).
