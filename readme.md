@@ -3,7 +3,7 @@
 Notice: This is a fork of the [Free Responsive HTML Email Template](https://github.com/leemunroe/responsive-html-email-template) repository by [Lee Munroe](https://github.com/leemunroe).
 
 
-<img src="example-preview.png" alt="Simple HTML Email Template" width="500">
+<img src="example-preview.png" alt="Simple HTML Email Template" width="700">
 
 ## Inline your CSS before sending
 
