@@ -42,4 +42,4 @@ Example:
 
 ## Tried and tested on all major email clients
 
-For compatibility overview please visit the [original repository](https://github.com/leemunroe/responsive-html-email-template).
+Tested on mobile, desktop and web. For full compatibility overview please visit the [original repository](https://github.com/leemunroe/responsive-html-email-template).
