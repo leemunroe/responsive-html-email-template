@@ -78,7 +78,6 @@
 
     .footer {
       clear: both;
-      padding-top: 24px;
       text-align: center;
       width: 100%;
     }
@@ -90,6 +89,10 @@
       color: #666666;
       font-size: 14px;
       text-align: center;
+    }
+
+    td.footer-links {
+      padding-top: 24px;
     }
 
     .footer-link {
@@ -107,6 +110,16 @@
       font-size: 12px;
       text-align: center;
     }
+
+    .header a.programme-logo-link {
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .header img.programme-logo {
       border: 0;
       outline: none;
@@ -114,7 +127,11 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 10px;
+    }
+
+    .header td.programme-tagline {
+      padding-top: 10px;
+      color: #909BA6;
     }
 
     /* -------------------------------------
@@ -170,7 +187,6 @@
       margin: 0;
       padding: 10px 20px;
       text-decoration: none;
-      text-transform: capitalize;
     }
 
     .btn-primary table td {
@@ -249,6 +265,7 @@
 
     td.powered-by {
       padding-top: 20px;
+      padding-bottom: 40px;
       color: #909BA6;
     }
 
@@ -256,11 +273,11 @@
       text-decoration: none;
     }
 
-    h1.email-title {
+    p.email-title {
       font-weight: bolder;
-      font-size: 23px;
+      font-size: 23px !important;
       margin: 0;
-      padding: 0 0 20px 0;
+      margin-bottom: 20px !important;
     }
 
     /* -------------------------------------
@@ -358,7 +375,13 @@
               <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="content-block">
-                    <a href="https://www.gorenewable.org.uk"><img src="programme-logo.png" alt="Go Renewable" width="185px" height="20px" border="0" class="programme-logo"></a>
+                    <a href="https://www.gorenewable.org.uk" class="programme-logo-link">
+                      <img src="https://github.com/EST-Karol/responsive-html-email-template/blob/master/programme-logo.png?raw=true" alt="Go Renewable" width="185" height="20" border="0" class="programme-logo">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block programme-tagline">
                     Find trusted installers, compare quotes and upgrade your home
                   </td>
                 </tr>
@@ -373,9 +396,8 @@
               <tr>
                 <td class="wrapper">
 
-                  <h1 class="email-title">Password reset</h1>
-
-                  <p>Hi Jason Bourne</p>
+                  <p class="email-title">Password reset</p>
+                  <p>Hi John Smith</p>
                   <p>You have requested to reset your password to access Go Renewable.</p>
                   <p>Please follow the link below to reset your password. This link will expire in 10 minutes.</p>
 
@@ -404,7 +426,7 @@
             <div class="footer">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td class="content-block">
+                  <td class="content-block footer-links">
                     <span class="apple-link">
                       <a class="footer-link" href="https://www.gorenewable.org.uk/Home/Help">Help</a>
                       <a class="footer-link" href="https://www.gorenewable.org.uk/Home/ContactUs">Contact</a>
