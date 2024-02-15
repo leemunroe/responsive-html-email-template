@@ -35,13 +35,13 @@
 ------------------------------------- */
 
     body {
-      background-color: #f4f5f6;
+      background-color: #fff;
       margin: 0;
       padding: 0;
     }
 
     .body {
-      background-color: #f4f5f6;
+      background-color: #fff;
       width: 100%;
     }
 
@@ -49,7 +49,6 @@
       margin: 0 auto !important;
       max-width: 600px;
       padding: 0;
-      padding-top: 24px;
       width: 600px;
     }
 
@@ -66,8 +65,7 @@
 
     .main {
       background: #ffffff;
-      border: 1px solid #E9EBED;
-      border-radius: 6px;
+      border-bottom: 1px solid #E9EBED;
       width: 100%;
     }
 
@@ -105,16 +103,17 @@
       margin-right: 0;
     }
 
-    .header {
-      margin-bottom: 20px;
+    .header-primary-fill {
+      background-color: #FFAF0A;
     }
-    .header td,
-    .header p,
-    .header span,
-    .header a {
-      color: #666666;
-      font-size: 12px;
-      text-align: center;
+
+    .header-secondary-fill {
+      background-color: #FFEFCE;
+    }
+
+    .header {
+      background-color: #FFAF0A;
+      padding: 24px;
     }
 
     .header a.programme-logo-link {
@@ -122,8 +121,6 @@
       outline: none;
       text-decoration: none;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .header img.programme-logo {
@@ -131,13 +128,13 @@
       outline: none;
       text-decoration: none;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 10px;
     }
 
-    .header td.programme-tagline {
+    .header div.programme-tagline {
       padding-top: 10px;
-      color: #909BA6;
+      color: #000;
+      font-size: 12px;
     }
 
     /* -------------------------------------
@@ -368,6 +365,57 @@
     </style>
   </head>
   <body>
+
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+
+      <tr class="header-primary-fill">
+        <td class="header-primary-fill">&nbsp;</td>
+        <td class="container header-primary-fill">
+          <div class="content">
+
+            <div class="header">
+              <table role="presentation" border="1" cellpadding="0" cellspacing="0">
+                <tr>
+
+                  <td class="">
+                    <a href="https://www.gorenewable.org.uk" class="programme-logo-link">
+                      <img src="logo-est.png" alt="Go Renewable" width="60" height="48" border="0" class="programme-logo">
+                    </a>
+                  </td>
+
+                  <td>
+                    <a href="https://www.gorenewable.org.uk" class="programme-logo-link">
+                      <img src="logo-partner.png" alt="Go Renewable" width="48" height="48" border="0" class="programme-logo">
+                    </a>
+                  </td>
+
+                  <td class="content-block">
+                    <a href="https://www.gorenewable.org.uk" class="programme-logo-link">
+                      <img src="logo-programme.png" alt="Go Renewable" width="92" height="10" border="0" class="programme-logo">
+                    </a>
+                    <div class="programme-tagline">Find trusted installers, compare quotes and upgrade your home</div>
+                  </td>
+
+                </tr>
+              </table>
+            </div>
+
+          </div>
+        </td>
+        <td class="header-primary-stripe">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td class="header-secondary-stripe">&nbsp;</td>
+        <td class="container header-secondary-stripe">
+          &nbsp;
+        </td>
+        <td class="header-secondary-stripe">&nbsp;</td>
+      </tr>
+
+    </table>
+
+
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
@@ -376,26 +424,6 @@
 
             <!-- START CENTERED WHITE CONTAINER -->
             <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
-
-            <!-- START HEADER -->
-            <div class="header">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block">
-                    <a href="https://www.gorenewable.org.uk" class="programme-logo-link">
-                      <img src="https://github.com/EST-Karol/responsive-html-email-template/blob/master/programme-logo.png?raw=true" alt="Go Renewable" width="185" height="20" border="0" class="programme-logo">
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block programme-tagline">
-                    Find trusted installers, compare quotes and upgrade your home
-                  </td>
-                </tr>
-              </table>
-            </div>
-
-            <!-- END FOOTER -->
 
 
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="main">
