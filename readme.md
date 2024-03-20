@@ -54,6 +54,7 @@ Tested on mobile, desktop and web.
 * [Grunt Email Design Workflow](https://github.com/leemunroe/grunt-email-design)
 * [Everything Web Developers Need To Know About Transactional Email](https://webdesign.tutsplus.com/articles/everything-developers-need-to-know-about-sending-transactional-email--cms-31759)
 * [Manage and Send Email Templates To Yourself](https://postdrop.io)
+* [Accessible Email Evaluation Tool](https://www.accessible-email.org/)
 
 This free template is part of a pack of responsive email templates for developers and startups available on [HTML Email](https://htmlemail.io).
 [![image](https://github.com/leemunroe/responsive-html-email-template/assets/15963/61d4a6d7-bd0e-4241-b4e5-d766162df192)](https://htmlemail.io)
