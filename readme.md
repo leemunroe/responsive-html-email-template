@@ -1,8 +1,11 @@
-# Free Responsive HTML Email Template
+# 📧 Responsive HTML Email Template
 
-Sometimes all you want is a really simple responsive HTML email template with a clear call-to-action button. Here it is.
+A clean, minimalist, and responsive email template optimized for developers and startups.
+- **Mobile Friendly**: Grid-based layout that works everywhere.
+- **Developer Ready**: Easily customizable and inliner-ready.
+- **Verified**: Tested on Gmail, Outlook, Apple Mail, and more.
 
-[See live preview](http://leemunroe.github.io/responsive-html-email-template/email.html).
+[**Live Preview**](http://leemunroe.github.io/responsive-html-email-template/email.html)
 
 <img src="https://github.com/leemunroe/responsive-html-email-template/assets/15963/29595188-d4f3-4236-877d-6488c159140d" alt="Simple HTML Email Template" width="500">
 
@@ -18,7 +21,7 @@ You can use this [Email CSS Inliner](https://htmlemail.io/inline/) and then [sen
 
 * Copy all of email.html
 * Paste the HTML as the source into the inliner
-* Copy the HTML output and use this as the email template you send
+* Copy the HTML output and use this as the email template you send 
 
 ### Sending emails using a marketing service like Mailchimp?
 
